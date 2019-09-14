@@ -28,15 +28,15 @@
 
 
 
-
+/* index */
 
 .margen{
   margin: 1px;
   border: solid 2px;
-};
+}
 .borde-blanco{
   border-color: white;
-};
+}
 
 .borde-negro{
   border: 20px;
@@ -45,4 +45,8 @@
 
 .backg-header{
   background-color: rgb(52, 152, 219);
-};
+}
+
+.backg-grey{
+  background-color: rgb(224, 235, 235);
+}
