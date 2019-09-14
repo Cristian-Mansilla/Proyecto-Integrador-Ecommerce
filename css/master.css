@@ -3,15 +3,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-};
+}
 
 .bg-blue {
   background: rgba(102, 102, 153, 0.7);
-};
+}
 
 .box-shadow {
   box-shadow: 1px 1px 3px 5px rgba(0,0,0,0.6);
-};
+}
 
 .logo-user {
   width: 25%;
@@ -20,23 +20,19 @@
   left: 37%;
   top: -27%;
   z-index: 1;
-};
+}
 
 .margin-top {
   margin-top: 120px;
-};
-
-
-
-
+}
 
 .margen{
   margin: 1px;
   border: solid 2px;
-};
+}
 .borde-blanco{
   border-color: white;
-};
+}
 
 .borde-negro{
   border: 20px;
@@ -45,4 +41,4 @@
 
 .backg-header{
   background-color: rgb(52, 152, 219);
-};
+}
