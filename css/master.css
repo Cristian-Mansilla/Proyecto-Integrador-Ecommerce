@@ -4,3 +4,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.bg-blue {
+  background: rgba(102, 102, 153, 0.7);
+}
