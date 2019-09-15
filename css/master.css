@@ -62,8 +62,8 @@
 }
 #imagen{
   background-image: url(../img/index/tecnologia.jpeg);
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
 
 
@@ -73,8 +73,8 @@
 #info{
   position: absolute;
   overflow: hidden;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background-color: rgb(179, 179, 179);
   -webkit-transition: opacity 0.2s;
@@ -119,3 +119,23 @@
   border: solid 1px;
   border-color: white;
 }
+
+#boton-productos{
+  position: absolute;
+  left:1100px;
+  bottom:30px;
+
+  }
+
+
+
+@media (max-width: 991px) {
+  #boton-productos{
+    width: 100px;
+    position: absolute;
+    left: 600px;
+  }
+}
+
+
+/* Fin CSS Index */

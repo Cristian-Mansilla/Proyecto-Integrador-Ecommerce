@@ -13,19 +13,36 @@
     <header class="container-fluid h-200 backg-header" >
       <!--Header 1  -->
       <div class="container">
-        <div class="row d-flex justify-content-between p-2 col-12">
-          <a href="#top" class="col-3"><img src="img/index/logo.png" class="rounded-circle w-25 h-100" alt="LOGO"></a>
-          <form class="form-inline row my-2 my-lg-0 col-6">
-           <input class="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search">
-           <button class="btn btn-outline-success my-2 my-sm-0 col-2 text-white borde-blanco" type="submit">Search</button>
+        <div class="row d-flex justify-content-between p-2 col-md-12 col-lg-12">
+          <a href="#top" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
+          <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6">
+           <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit">Search</button>
          </form>
-          <div class="col-3 row pt-2">
-            <a href="login.html" class=" borde-blanco pt-1   rounded col-5 m-1 text-center text-white">Log In</a>
-            <a href="register.html" class="borde-blanco border-none pt-1 bg-white rounded col-5 m-1 text-center color-lightBlue">Sign Up</a>
+          <div class="col-lg-3 row pt-lg-3 d-lg-block d-md-none">
+            <a href="login.html" class=" borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white">Iniciar sesion</a>
+            <a href="register.html" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
+          </div>
+          <!-- HEADER 2 PARA MEDIUM SIZE -->
+          <div class="dropdown col-md-2 d-md-block d-lg-none pt-md-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <ion-icon name="menu"></ion-icon>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-3 rounded p-1">Canjear cupon</a></button>
+                <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-3 rounded p-1">Ofertas</a></button>
+                <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-3 rounded p-1">¿Quienes somos?</a></button>
+                <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-2 rounded p-1">Ayuda</a></button>
+              </div>
+
+          </div>
+          <div class="col-2 row d-md-block d-lg-none pt-3 justify-content-between">
+            <a href="#top" class="col-md-5 my-3 bg-dark p-2  text-white rounded"><ion-icon name="notifications"></ion-icon></a>
+            <a href="#top" class="col-md-5 my-3 bg-dark p-2 text-white rounded"><ion-icon name="cart"></ion-icon></a>
           </div>
         </div>
           <!-- Header 2  -->
-          <div class="row d-flex justify-content-between p-2 col-12">
+          <div class="row d-flex justify-content-between p-2 col-12 d-lg-block d-md-none">
             <div class="dropdown col-10 d-flex justify-content-between">
               <button class="btn btn-secondary dropdown-toggle col-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categorias
@@ -35,19 +52,19 @@
                 <a class="dropdown-item" href="#">Tecnologia</a>
                 <a class="dropdown-item" href="#">Deportes</a>
               </div>
-              <div class="col-10 row justify-content-between">
-                <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">¿Quienes somos?</a>
+              <div class="col-8 row justify-content-between">
                 <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Canjear cupon</a>
                 <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Ofertas</a>
+                <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">¿Quienes somos?</a>
                 <a href="#top" class="text-center text-white pt-2 bg-dark col-2 rounded p-1">Ayuda</a>
               </div>
+              <div class="col-2 row">
+                <a href="#top" class="col-4 p-1 m-1 bg-dark text-center text-white rounded"><ion-icon name="notifications"></ion-icon></a>
+                <a href="#top" class="col-4 p-1 m-1 bg-dark text-center text-white rounded"><ion-icon name="cart"></ion-icon></a>
+              </div>
             </div>
-            <div class="col-2 row">
-              <a href="#top" class="col-2 p-1 m-1 bg-dark text-white rounded"><ion-icon name="notifications"></ion-icon></a>
-              <a href="#top" class="col-2 p-1 m-1 bg-dark text-white rounded"><ion-icon name="cart"></ion-icon></a>
-            </div>
-          </div>
 
+          </div>
       </div>
     </header>
     <!-- Contenido Principal -->
@@ -82,24 +99,24 @@
       <div class="container-fluid">
         <!-- Bannerts Tarjetas -->
         <div class="container justify-content-between d-flex p-2">
-          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Banert Tarjetas 1" class="col-6">
-          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Baner Tarjetas 2" class="col-6">
+          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Banert Tarjetas 1" class="col-lg-6 col-md-12">
+          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Baner Tarjetas 2" class="col-lg-6 d-lg-block d-md-none ">
         </div>
         <!-- Mas Vendidos -->
         <h2 class="text-center color-lightBlue">Lo mas vendido</h2>
         <div class="container justify-content-center">
           <h2 class="col-12 border-bottom border-secondary">Tecnologia</h2>
-          <div class="row col-12 p-2 m-0" >
-            <a href="#" class="zoom col-3">
+          <div class="row col-12  justify-content-between" >
+            <a href="#" class="zoom col-lg-3 col-md-6 mt-md-2">
               <div class="" id="imagen">
                 <div class="" id="info">
                   <p id="headline">$300</p>
                 </div>
               </div>
             </a>
-            <a href="#top" class="col-3"><img src="img/index/celular.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto1"></a>
-            <a href="#top" class="col-3"><img src="img/index/televisor.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto2"></a>
-            <a href="#top" class="col-3"><img src="img/index/computadora.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto3"></a>
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/celular.jpeg" class="w-lg-200 h-lg-200 rounded-circle"  alt="Producto1"></a>
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/televisor.jpeg" class="w-lg-200 h-lg-200  rounded-circle" alt="Producto2"></a>
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/computadora.jpeg" class="w-lg-200 h-lg-200  rounded-circle" alt="Producto3"></a>
 
           </div>
           <br>
@@ -107,10 +124,10 @@
           <br>
           <h2 class="col-12 border-bottom border-secondary">Deportes</h2>
           <div class="row col-12 p-2 m-0" >
-            <a href="#" class="col-3"><img src="img/index/deportes.jpeg" width="200" height="200" class=" rounded-circle" alt="Deportes"></a>
-            <a href="#" class="col-3"><img src="img/index/correr.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
-            <a href="#" class="col-3"><img src="img/index/botella.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
-            <a href="#" class="col-3"><img src="img/index/futbol.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/deportes.jpeg" width="200" height="200" class=" rounded-circle" alt="Deportes"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/correr.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/botella.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/futbol.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
 
 
 
@@ -120,10 +137,10 @@
           <br>
           <h2 class="col-12 border-bottom border-secondary">Hogar</h2>
           <div class="row col-12 p-2 m-0">
-            <a href="#" class="col-3"><img src="img/index/hogar.jpeg" width="200" height="200" class=" rounded-circle" alt="Hogar"></a>
-            <a href="#" class="col-3"><img src="img/index/sillon.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
-            <a href="#" class="col-3"><img src="img/index/mesa-y-sillas.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
-            <a href="#" class="col-3"><img src="img/index/almhoadones.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/hogar.jpeg" width="200" height="200" class=" rounded-circle" alt="Hogar"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/sillon.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/mesa-y-sillas.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
+            <a href="#" class="col-lg-3 col-md-6 mt-md-2"><img src="img/index/almhoadones.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
           </div>
         </div>
         <br>
@@ -131,13 +148,16 @@
         <br>
       <!-- Bannerts ofertas esclusibas -->
         <div class="container p-2">
-          <img src="img/index/ofertas.jpeg" height="200"  class="col-12 text-center rounded-pill" alt="Bannert Ofertas">
+          <img src="img/index/ofertas.png"   class="h-lg-200 h-md-100 col-12 text-center rounded-pill" alt="Bannert Ofertas">
         </div>
+        <br>
+        <br>
+        <br>
         <!-- Productos en ofertas -->
         <div class="container text-center p-2 justify-content-between">
-          <img src="img/index/oferta1.jpeg" alt="Producto oferta 1" class="col-3 rounded-circle"  height="200" width="200">
-          <img src="img/index/oferta2.jpeg" alt="Producto oferta 2" class="col-3 rounded-circle"  height="200" width="200">
-          <img src="img/index/oferta3.jpeg" alt="Producto oferta 3" class="col-3 rounded-circle"  height="200" width="200">
+          <img src="img/index/oferta1.jpeg" alt="Producto oferta 1" class="col-4 rounded-circle"  height="200" width="200">
+          <img src="img/index/oferta2.jpeg" alt="Producto oferta 2" class="col-4 rounded-circle"  height="200" width="200">
+          <img src="img/index/oferta3.jpeg" alt="Producto oferta 3" class="col-4 rounded-circle"  height="200" width="200">
         </div>
         <!-- Bannert mas productos -->
         <br>
@@ -149,8 +169,8 @@
           <img class="col-12" width="1300" height="270" src="img/index/celular2.jpeg" alt="Bannert mas productos">
         </div>
         <div class="col-12 row ">
-          <h2 class="col-10"></h2>
-          <a class="col-1  backg-header rounded text-white" href="#">Mas productos</a>
+          <h2 class="col-md-9 col-lg-10"></h2>
+          <a class="col-md-2 col-lg-1  backg-header rounded text-white" id="boton-productos" href="#">Mas productos</a>
         </div>
       </div>
     </div>
