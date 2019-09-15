@@ -50,11 +50,72 @@
 .backg-header{
   background-color: rgb(52, 152, 219);
 }
-
+.margen_1px{
+  margin: 1px;
+}
 
 .backg-grey{
   background-color: rgb(224, 235, 235);
 }
 .color-lightBlue{
   color: rgb(52, 152, 219);
+}
+#imagen{
+  background-image: url(../img/index/tecnologia.jpeg);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+
+
+}
+
+#info{
+  position: absolute;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(179, 179, 179);
+  -webkit-transition: opacity 0.2s;
+  opacity: 0;
+}
+
+#imagen:hover #info{
+  opacity: 0.8;
+}
+
+.zoom{
+  transition: transform 0.5s;
+}
+
+.zoom:hover{
+  transform: scale(1.2);
+}
+#headline{
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  font-size: 21px;
+  margin-left: 75px;
+  margin-top: 75px;
+}
+
+
+
+#index{
+  background-color: rgb(27, 102, 152);
+}
+
+.backg-footer{
+  font-weight:300;
+  font-family:Kanit, sans-serif;
+}
+
+.borde-blanco{
+  font-weight: bold;
+  height: 40px;
+  border: solid 1px;
+  border-color: white;
 }

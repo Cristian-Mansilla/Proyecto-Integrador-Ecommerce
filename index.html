@@ -5,10 +5,11 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
+  <body id="index">
     <header class="container-fluid h-200 backg-header" >
       <!--Header 1  -->
       <div class="container">
@@ -18,9 +19,9 @@
            <input class="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search">
            <button class="btn btn-outline-success my-2 my-sm-0 col-2 text-white borde-blanco" type="submit">Search</button>
          </form>
-          <div class="col-3 d-flex row">
-            <a href="login.html" class="rounded-pill p-1 col-5 m-1 text-center text-white">Log In</a>
-            <a href="register.html" class="rounded-pill p-1 col-5 m-1 text-center text-white">Sign Up</a>
+          <div class="col-3 row pt-2">
+            <a href="login.html" class=" borde-blanco pt-1   rounded col-5 m-1 text-center text-white">Log In</a>
+            <a href="register.html" class="borde-blanco border-none pt-1 bg-white rounded col-5 m-1 text-center color-lightBlue">Sign Up</a>
           </div>
         </div>
           <!-- Header 2  -->
@@ -35,10 +36,10 @@
                 <a class="dropdown-item" href="#">Deportes</a>
               </div>
               <div class="col-10 row justify-content-between">
-                <a href="#top" class="text-center text-white bg-dark col-3 rounded p-1">¿Quienes somos?</a>
-                <a href="#top" class="text-center text-white bg-dark col-3 rounded p-1">Canjear cupon</a>
-                <a href="#top" class="text-center text-white bg-dark col-3 rounded p-1">Ofertas</a>
-                <a href="#top" class="text-center text-white bg-dark col-2 rounded p-1">Ayuda</a>
+                <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">¿Quienes somos?</a>
+                <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Canjear cupon</a>
+                <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Ofertas</a>
+                <a href="#top" class="text-center text-white pt-2 bg-dark col-2 rounded p-1">Ayuda</a>
               </div>
             </div>
             <div class="col-2 row">
@@ -87,80 +88,114 @@
         <!-- Mas Vendidos -->
         <h2 class="text-center color-lightBlue">Lo mas vendido</h2>
         <div class="container justify-content-center">
+          <h2 class="col-12 border-bottom border-secondary">Tecnologia</h2>
           <div class="row col-12 p-2 m-0" >
-            <img src="img/index/tecnologia.jpeg" class="col-3" width="200" height="200" alt="Tecnologia">
-            <img src="img/index/celular.jpeg" class="col-3" width="200" height="200" alt="Producto1">
-            <img src="img/index/televisor.jpeg" class="col-3" width="200" height="200" alt="Producto2">
-            <img src="img/index/computadora.jpeg" class="col-3" width="200" height="200" alt="Producto3">
+            <a href="#" class="zoom col-3">
+              <div class="" id="imagen">
+                <div class="" id="info">
+                  <p id="headline">$300</p>
+                </div>
+              </div>
+            </a>
+            <a href="#top" class="col-3"><img src="img/index/celular.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto1"></a>
+            <a href="#top" class="col-3"><img src="img/index/televisor.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto2"></a>
+            <a href="#top" class="col-3"><img src="img/index/computadora.jpeg" class=" rounded-circle" width="200" height="200" alt="Producto3"></a>
+
           </div>
+          <br>
+          <br>
+          <br>
+          <h2 class="col-12 border-bottom border-secondary">Deportes</h2>
           <div class="row col-12 p-2 m-0" >
-            <img src="img/index/deportes.jpeg" width="200" height="200" class="col-3" alt="Deportes">
-            <img src="img/index/correr.jpeg" width="200" height="200" class="col-3" alt="Producto1">
-            <img src="img/index/botella.jpeg" width="200" height="200" class="col-3" alt="Producto2">
-            <img src="img/index/futbol.jpeg" width="200" height="200" class="col-3" alt="Producto3">
+            <a href="#" class="col-3"><img src="img/index/deportes.jpeg" width="200" height="200" class=" rounded-circle" alt="Deportes"></a>
+            <a href="#" class="col-3"><img src="img/index/correr.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
+            <a href="#" class="col-3"><img src="img/index/botella.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
+            <a href="#" class="col-3"><img src="img/index/futbol.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
+
+
+
           </div>
+          <br>
+          <br>
+          <br>
+          <h2 class="col-12 border-bottom border-secondary">Hogar</h2>
           <div class="row col-12 p-2 m-0">
-            <img src="img/index/hogar.jpeg" width="200" height="200" class="col-3" alt="Hogar">
-            <img src="img/index/sillon.jpeg" width="200" height="200" class="col-3" alt="Producto1">
-            <img src="img/index/mesa-y-sillas.jpeg" width="200" height="200" class="col-3" alt="Producto2">
-            <img src="img/index/almhoadones.jpeg" width="200" height="200" class="col-3" alt="Producto3">
+            <a href="#" class="col-3"><img src="img/index/hogar.jpeg" width="200" height="200" class=" rounded-circle" alt="Hogar"></a>
+            <a href="#" class="col-3"><img src="img/index/sillon.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto1"></a>
+            <a href="#" class="col-3"><img src="img/index/mesa-y-sillas.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto2"></a>
+            <a href="#" class="col-3"><img src="img/index/almhoadones.jpeg" width="200" height="200" class=" rounded-circle" alt="Producto3"></a>
           </div>
         </div>
+        <br>
+        <br>
+        <br>
       <!-- Bannerts ofertas esclusibas -->
-        <div class="container">
-          <img src="img/index/ofertas.jpeg" height="200"  class="col-12 text-center" alt="Bannert Ofertas">
+        <div class="container p-2">
+          <img src="img/index/ofertas.jpeg" height="200"  class="col-12 text-center rounded-pill" alt="Bannert Ofertas">
         </div>
         <!-- Productos en ofertas -->
-        <div class="">
-          <img src="" alt="Producto 1">
-          <img src="" alt="Producto 2">
-          <img src="" alt="Producto 2">
+        <div class="container text-center p-2 justify-content-between">
+          <img src="img/index/oferta1.jpeg" alt="Producto oferta 1" class="col-3 rounded-circle"  height="200" width="200">
+          <img src="img/index/oferta2.jpeg" alt="Producto oferta 2" class="col-3 rounded-circle"  height="200" width="200">
+          <img src="img/index/oferta3.jpeg" alt="Producto oferta 3" class="col-3 rounded-circle"  height="200" width="200">
         </div>
         <!-- Bannert mas productos -->
-        <div class="">
-          <img src="" alt="Bannert mas productos">
-          <a href="#">Mas productos</a>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+          <h2 class="col-12 border-bottom border-secondary">Puede Interesarte</h2>
+          <img class="col-12" width="1300" height="270" src="img/index/celular2.jpeg" alt="Bannert mas productos">
+        </div>
+        <div class="col-12 row ">
+          <h2 class="col-10"></h2>
+          <a class="col-1  backg-header rounded text-white" href="#">Mas productos</a>
         </div>
       </div>
     </div>
-    <div class="container">
-      <a href="#top">Inicio</a>
+    <div class="container-fluid d-flex justify-content-center backg-grey">
+      <div class="container d-flex justify-content-center">
+        <a class="col-1 backg-header rounded text-center text-white" href="#top">Inicio</a>
+      </div>
     </div>
-    <footer>
-      <div class="">
-        <h3>Comprar y vender</h3>
-        <ul>
-          <li>Registro</li>
-          <li>Marcas</li>
-          <li>Como comprar y vender</li>
-          <li>Productos populares</li>
+    <footer class="container-fluid row backg-footer">
+      <div class="col-3">
+        <h3 class="col-12 text-white">Comprar y vender</h3>
+        <ul class="list-unstyled">
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Registro</a> </li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Marcas</a> </li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Como comprar y vender</a> </li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Productos populares</a> </li>
         </ul>
       </div>
-      <div class="">
-        <h3>Metodos de pago</h3>
-        <ul>
-          <li>Metodos de pago</li>
-          <li>Cupones especiales</li>
-          <li>Promociones con tarjetas</li>
+      <div class="col-3">
+        <h3 class="text-white col-12">Metodos de pago</h3>
+        <ul class="list-unstyled ">
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Metodos de pago</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Cupones especiales</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Promociones con tarjetas</a></li>
         </ul>
       </div>
-      <div class="">
-        <h3>Mas sobre nosotros</h3>
-        <ul>
-          <li>Acerca de nosotros</li>
-          <li>Desarrolladores</li>
-          <li>Politicas y reglas</li>
+      <div class="col-3 backg-footer">
+        <h3 class="text-white col-12">Mas sobre nosotros</h3>
+        <ul class="list-unstyled">
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Acerca de nosotros</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Desarrolladores</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Politicas y reglas</a></li>
+
         </ul>
       </div>
-      <div class="">
-        <h3>Ayuda</h3>
-        <ul>
-          <li>Atencion al cliente</li>
-          <li>Gestionar compras</li>
-          <li>Contacto</li>
-          <li>Reportar Problema</li>
-          <li>Medios de pago</li>
-          <li>Ayuda</li>
+      <div class="col-3 backg-footer">
+        <h3 class="text-white col-12">Ayuda</h3>
+        <ul class="list-unstyled">
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Atencion al cliente</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Gestionar compras</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Contacto</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Reportar Problema</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Medios de pago</a></li>
+          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Ayuda</a></li>
+
         </ul>
       </div>
 
