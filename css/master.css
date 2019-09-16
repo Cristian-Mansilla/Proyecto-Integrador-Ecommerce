@@ -1,3 +1,4 @@
+/*login*/
 .bg-login {
   background-image: url("../img/bg-login.jpg");
   background-size: cover;
@@ -26,7 +27,7 @@
   margin-top: 120px;
 
 }
-
+/*fin login*/
 /*register*/
 .box-register{
   border: solid 2px rgb(52, 152, 219);
@@ -180,3 +181,10 @@
 
 
 /* Fin CSS Index */
+/*faqs*/
+.goBack {
+  background: grey;
+  padding: 10px;
+}
+
+/*fin faqs*/
