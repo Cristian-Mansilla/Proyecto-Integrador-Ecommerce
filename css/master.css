@@ -187,4 +187,41 @@
   padding: 10px;
 }
 
+.first-letter::first-letter {
+  color: blue;
+}
+
+.list-none {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.display-none {
+  display: none;
+}
+
+/*cambia las propiedades para visualizar los párrafos ocultos.*/
+#a:target {
+  display: block;
+}
+#b:target {
+  display: block;
+}
+#c:target {
+  display: block;
+}
+#d:target {
+  display: block;
+}
+#e:target {
+  display: block;
+}
+#f:target {
+  display: block;
+}
+/**/
+
+.bg-white {
+  background: white;
+}
 /*fin faqs*/
