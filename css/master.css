@@ -196,30 +196,14 @@
   padding: 0px;
 }
 
-.display-none {
+/*oculto párrafos*/
+.hideAndSeek p {
   display: none;
 }
-
-/*cambia las propiedades para visualizar los párrafos ocultos.*/
-#a:target {
+/*cambio las propiedades para visualizar los párrafos ocultos.*/
+.hideAndSeek p:target {
   display: block;
 }
-#b:target {
-  display: block;
-}
-#c:target {
-  display: block;
-}
-#d:target {
-  display: block;
-}
-#e:target {
-  display: block;
-}
-#f:target {
-  display: block;
-}
-/**/
 
 .bg-white {
   background: white;
