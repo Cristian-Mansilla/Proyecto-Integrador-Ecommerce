@@ -152,6 +152,11 @@
   height: 300px;
   background-image: url(../img/index/caroussel3.png);
 }
+#banner-productos{
+  background-image: url(../img/index/banner-prod.png);
+  height: 270px;
+  width: 1300px;
+}
 
 
 
@@ -176,6 +181,11 @@
   #caroussel3{
     height: 300px;
     background-image: url(../img/index/caroussel3-md.png);
+  }
+  #banner-productos{
+    background-image: url(../img/index/banner-prod-md.png);
+    height: 270px;
+    width: 1300px;
   }
 }
 

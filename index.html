@@ -19,9 +19,9 @@
            <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" aria-label="Search">
            <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit">Search</button>
          </form>
-          <div class="col-lg-3 row pt-lg-3 d-lg-block d-md-none">
+          <div class="col-lg-3 row pt-lg-3 d-lg-block d-none d-md-none">
             <a href="login.html" class=" borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white">Iniciar sesion</a>
-            <a href="register.html" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
+            <a href="registro.html" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
           </div>
           <!-- HEADER 2 PARA MEDIUM SIZE -->
           <div class="dropdown col-md-2 d-md-block d-lg-none pt-md-2">
@@ -30,7 +30,7 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <button class="dropdown-item" type="button"><a href="login.html" class="text-center pt-2 col-12 rounded p-1 ">Iniciar sesion</a></button>
-                <button class="dropdown-item backg-header" type="button"><a href="register.html" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
+                <button class="dropdown-item backg-header" type="button"><a href="registro.html" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
                 <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
                 <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
                 <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
@@ -45,7 +45,7 @@
           </div>
         </div>
           <!-- Header 2  -->
-          <div class="row d-flex justify-content-between p-2 col-12 d-lg-block d-md-none">
+          <div class="row d-flex justify-content-between p-2 col-12 d-lg-block d-sm-none d-md-none">
             <div class="dropdown col-10 d-flex justify-content-between">
               <button class="btn btn-secondary dropdown-toggle col-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categorias
@@ -87,7 +87,7 @@
 
           </div>
           <div class="carousel-item" id="caroussel3">
-            
+
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -169,7 +169,8 @@
 
         <div class="container">
           <h2 class="col-12 border-bottom border-secondary">Puede Interesarte</h2>
-          <img class="col-12" width="1300" height="270" src="img/index/celular2.png" alt="Bannert mas productos">
+          <div class="col-12" id="banner-productos">
+          </div>
         </div>
         <div class="col-12 row ">
           <h2 class="col-md-9 col-lg-10"></h2>
