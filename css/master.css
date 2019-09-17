@@ -197,4 +197,25 @@
   padding: 10px;
 }
 
+.first-letter::first-letter {
+  color: blue;
+}
+
+.list-none {
+  list-style-type: none;
+  padding: 0px;
+}
+
+/*oculto párrafos*/
+.hideAndSeek p {
+  display: none;
+}
+/*cambio las propiedades para visualizar los párrafos ocultos.*/
+.hideAndSeek p:target {
+  display: block;
+}
+
+.bg-white {
+  background: white;
+}
 /*fin faqs*/
