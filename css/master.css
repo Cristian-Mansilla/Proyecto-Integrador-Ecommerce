@@ -193,7 +193,10 @@
 /* Fin CSS Index */
 /*faqs*/
 .goBack {
-  background: grey;
+  background-image: url("../img/banner-faqs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 10px;
 }
 
