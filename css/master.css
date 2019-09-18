@@ -37,6 +37,8 @@
   padding: 1px;
   text-transform: uppercase;
   box-shadow: 0px 0px 5px 6px tomato;
+  border-radius: 1%;
+  margin-right: 5px;
 }
 
 /*fin login*/
