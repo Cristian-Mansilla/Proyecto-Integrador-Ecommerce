@@ -50,17 +50,11 @@
         <h2 class="text-center color-lightBlue"></h2>
         <div class="container justify-content-center">
           <h2 class="col-12 border-bottom border-secondary">Lo mas vendido</h2>
-          <div class="row col-12  justify-content-between" >
-            <a href="#" class="zoom col-lg-3 col-md-6 col-sm-6 mt-md-2">
-              <div class="" id="imagen">
-                <div class="" id="info">
-                  <p id="headline">$300</p>
-                </div>
-              </div>
-            </a>
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6"><img src="img/index/celular.jpeg" class=" rounded-circle"  alt="Producto1"></a>
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6"><img src="img/index/televisor.jpeg" class="  rounded-circle" alt="Producto2"></a>
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6"><img src="img/index/computadora.jpeg" class=" rounded-circle" alt="Producto3"></a>
+          <div class="row col-12  justify-content-between text-center" >
+
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/celular.jpeg" class=" rounded-circle"  alt="Producto1"></a>
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/televisor.jpeg" class="  rounded-circle" alt="Producto2"></a>
+            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/computadora.jpeg" class=" rounded-circle" alt="Producto3"></a>
 
           </div>
           <br><br><br>
@@ -68,14 +62,14 @@
           <div class="">
             <h2 class="text-center">CATEGORIAS MAS BUSCADAS</h2>
             <br><br>
-          <div class="row justify-content-between p-sm-5 p-lg-0 ">
+          <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center  p-sm-5 p-lg-0 ">
             <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2  pl-sm-5 m-sm-2  bg-dark"><ion-icon name="laptop"></ion-icon></a>
             <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="phone-portrait"></ion-icon></a>
             <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="home"></ion-icon></a>
             <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="football"></ion-icon></a>
           </div>
           <div class="back-black">
-            <div class="row justify-content-between p-sm-5 p-lg-0">
+            <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center p-sm-5 p-lg-0">
               <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="bed"></ion-icon></a>
               <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="bicycle"></ion-icon></a>
               <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="car"></ion-icon></a>
@@ -110,13 +104,13 @@
           </div>
         </div>
         <div class="col-12 row">
-          <a class="col-md-2 col-lg-1 backg-header rounded text-white boton-prod" href="#">Mas productos</a>
+          <a class="col-md-2 col-lg-1 col-4 backg-header rounded text-white boton-prod" href="#">Mas productos</a>
         </div>
       </div>
     </div>
     <div class="container-fluid d-flex justify-content-center backg-grey">
       <div class="container d-flex justify-content-center">
-        <a class="col-2 col-sm-2 col-lg-1 col-md-1 backg-header rounded text-center text-white" href="#top">Inicio</a>
+        <a class="col-3 col-sm-2 col-lg-1 col-md-1 backg-header rounded text-center text-white" href="#top">Inicio</a>
       </div>
     </div>
     <?php require("footer.php") ?>

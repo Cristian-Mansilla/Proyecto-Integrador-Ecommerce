@@ -88,38 +88,6 @@
 .color-lightBlue{
   color: rgb(52, 152, 219);
 }
-#imagen{
-  background-image: url(../img/index/tecnologia.jpeg);
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-
-
-
-}
-
-#info{
-  position: absolute;
-  overflow: hidden;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-color: rgb(179, 179, 179);
-  -webkit-transition: opacity 0.2s;
-  opacity: 0;
-}
-
-#imagen:hover #info{
-  opacity: 0.8;
-}
-
-.zoom{
-  transition: transform 0.5s;
-}
-
-.zoom:hover{
-  transform: scale(1.2);
-}
 #headline{
   position: absolute;
   color: black;
@@ -183,12 +151,24 @@
   left: 1000px;
   bottom: 30px;
 }
-@media (max-width: 575px){
+@media (max-width: 570px){
   .boton-prod {
     position: absolute;
     width: 100px;
     bottom: 30px;
-    left: 270px;
+    left: 200px;
+}
+#caroussel1{
+  height: 300px;
+  background-image: url(../img/index/caroussel1-sm.png);
+}
+#caroussel2{
+  height: 300px;
+  background-image: url(../img/index/caroussel2-sm.png);
+}
+#caroussel3{
+  height: 300px;
+  background-image: url(../img/index/caroussel3-sm.png);
 }
 }
 @media (max-width: 767px) and (min-width: 576px) {
