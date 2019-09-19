@@ -160,15 +160,15 @@
 }
 #caroussel1{
   height: 300px;
-  background-image: url(../img/index/caroussel1-sm.png);
+  background-image: url(../img/index/caroussel1-xs.png);
 }
 #caroussel2{
   height: 300px;
-  background-image: url(../img/index/caroussel2-sm.png);
+  background-image: url(../img/index/caroussel2-xs.png);
 }
 #caroussel3{
   height: 300px;
-  background-image: url(../img/index/caroussel3-sm.png);
+  background-image: url(../img/index/caroussel3-xs.png);
 }
 }
 @media (max-width: 767px) and (min-width: 576px) {
