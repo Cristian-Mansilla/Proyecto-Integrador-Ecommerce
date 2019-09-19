@@ -147,12 +147,6 @@
   border-color: white;
 }
 
-#boton-productos{
-  position: absolute;
-  left:1100px;
-  bottom:30px;
-
-  }
 #caroussel1{
   height: 300px;
   background-image: url(../img/index/caroussel1.png);
@@ -170,7 +164,20 @@
   height: 270px;
   width: 1300px;
 }
-@media (max-width: 701px) and (min-width: 576px) {
+.boton-prod{
+  position: absolute;
+  left: 1000px;
+  bottom: 30px;
+}
+@media (max-width: 575px){
+  .boton-prod {
+    position: absolute;
+    width: 100px;
+    bottom: 30px;
+    left: 270px;
+}
+}
+@media (max-width: 767px) and (min-width: 576px) {
 
   #caroussel1{
     height: 300px;
@@ -189,16 +196,19 @@
     height: 270px;
     width: 480px;
   }
+  .boton-prod {
+    position: absolute;
+    width: 100px;
+    left: 400px;
+    bottom: 30px;
+}
+
 
 
 }
 
-@media (max-width: 990px) and (min-width: 702px){
-  #boton-productos{
-    width: 100px;
-    position: absolute;
-    left: 600px;
-  }
+@media (max-width: 991px) and (min-width: 768px){
+
   .dropdown-item{
     font-weight:300;
 
@@ -220,6 +230,11 @@
     background-image: url(../img/index/banner-prod-md.png);
     height: 270px;
     width: 660px;
+  }
+  .boton-prod{
+    position: absolute;
+    left: 550px;
+    bottom: 30px;
   }
 }
 

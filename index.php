@@ -109,58 +109,17 @@
           <div class="col-12" id="banner-productos">
           </div>
         </div>
-        <div class="col-12 row d-sm-none d-lg-block d-none ">
-          <h2 class="col-md-9 col-lg-10"></h2>
-          <a class="col-md-2 col-lg-1  backg-header rounded text-white" id="boton-productos" href="#">Mas productos</a>
+        <div class="col-12 row">
+          <a class="col-md-2 col-lg-1 backg-header rounded text-white boton-prod" href="#">Mas productos</a>
         </div>
       </div>
     </div>
     <div class="container-fluid d-flex justify-content-center backg-grey">
       <div class="container d-flex justify-content-center">
-        <a class="col-1 col-sm-2 backg-header rounded text-center text-white" href="#top">Inicio</a>
+        <a class="col-2 col-sm-2 col-lg-1 col-md-1 backg-header rounded text-center text-white" href="#top">Inicio</a>
       </div>
     </div>
-    <footer class="container-fluid justify-content-between row backg-footer">
-      <div class="col-lg-3 col-md-5">
-        <h3 class="col-12 text-white">Comprar y vender</h3>
-        <ul class="list-unstyled">
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Registro</a> </li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Marcas</a> </li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Como comprar y vender</a> </li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Productos populares</a> </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-5">
-        <h3 class="text-white col-12">Metodos de pago</h3>
-        <ul class="list-unstyled ">
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Metodos de pago</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Cupones especiales</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Promociones con tarjetas</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-5 backg-footer">
-        <h3 class="text-white col-12">Mas sobre nosotros</h3>
-        <ul class="list-unstyled">
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Acerca de nosotros</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Desarrolladores</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Politicas y reglas</a></li>
-
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-5 backg-footer">
-        <h3 class="text-white col-12">Ayuda</h3>
-        <ul class="list-unstyled">
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Atencion al cliente</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Gestionar compras</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Contacto</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Reportar Problema</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Medios de pago</a></li>
-          <li class="ml-3"><a class="text-white text-decoration-none" href="#">Ayuda</a></li>
-
-        </ul>
-      </div>
-
-    </footer>
+    <?php require("footer.php") ?>
 
 
 
