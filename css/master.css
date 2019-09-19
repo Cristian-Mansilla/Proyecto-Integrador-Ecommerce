@@ -83,7 +83,7 @@
 }
 
 .backg-grey{
-  background-color: rgb(224, 235, 235);
+    background-color: rgb(224, 235, 235);
 }
 .color-lightBlue{
   color: rgb(52, 152, 219);
@@ -133,13 +133,26 @@
 
 
 #index{
-  background-color: rgb(27, 102, 152);
+  background-color: rgb(52, 152, 219);
 }
 
 .backg-footer{
+  background-color: rgb(27, 102, 152);
   font-weight:300;
   font-family:Kanit, sans-serif;
 }
+
+.backg-categorias{
+  background-color: rgb(193, 215, 215);
+  height: 200px;
+  width: 200px;
+
+}
+.sizezing{
+  font-size: 150px;
+
+}
+
 
 .borde-blanco{
   font-weight: bold;
@@ -148,12 +161,6 @@
   border-color: white;
 }
 
-#boton-productos{
-  position: absolute;
-  left:1100px;
-  bottom:30px;
-
-  }
 #caroussel1{
   height: 300px;
   background-image: url(../img/index/caroussel1.png);
@@ -171,17 +178,54 @@
   height: 270px;
   width: 1300px;
 }
-
-
-
-@media (max-width: 991px) {
-  #boton-productos{
-    width: 100px;
+.boton-prod{
+  position: absolute;
+  left: 1000px;
+  bottom: 30px;
+}
+@media (max-width: 575px){
+  .boton-prod {
     position: absolute;
-    left: 600px;
+    width: 100px;
+    bottom: 30px;
+    left: 270px;
+}
+}
+@media (max-width: 767px) and (min-width: 576px) {
+
+  #caroussel1{
+    height: 300px;
+    background-image: url(../img/index/caroussel1-sm.png);
   }
+  #caroussel2{
+    height: 300px;
+    background-image: url(../img/index/caroussel2-sm.png);
+  }
+  #caroussel3{
+    height: 300px;
+    background-image: url(../img/index/caroussel3-sm.png);
+  }
+  #banner-productos{
+    background-image: url(../img/index/banner-prod-sm.png);
+    height: 270px;
+    width: 480px;
+  }
+  .boton-prod {
+    position: absolute;
+    width: 100px;
+    left: 400px;
+    bottom: 30px;
+}
+
+
+
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+
   .dropdown-item{
     font-weight:300;
+
     font-family:Kanit, sans-serif;
   }
   #caroussel1{
@@ -199,7 +243,12 @@
   #banner-productos{
     background-image: url(../img/index/banner-prod-md.png);
     height: 270px;
-    width: 1300px;
+    width: 660px;
+  }
+  .boton-prod{
+    position: absolute;
+    left: 550px;
+    bottom: 30px;
   }
 }
 
