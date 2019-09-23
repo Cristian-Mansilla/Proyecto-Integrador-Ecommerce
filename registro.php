@@ -10,30 +10,32 @@
   <body class="body-register">
     <div class="container">
       <div class="row justify-content-md-center margin-top">
-      <div class="col-12 col-md-6 col-lg-8 box-register position-relative"
-        <form action="register.html" method="post">
+      <div class="col-12 col-md-6 col-lg-8 box-register position-relative">
+        <form action="agregar.php" method="post">
+          <div class="form-group">
+            <input class="form-control" type="text" name="username" value="" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="lastname" value="" placeholder="Apellido">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" value="" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" value="" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary" name="enviar" value="Enviar">Crear cuenta</button>
+        </form>
             <h1>Completá tus datos</h1>
-            <div class="form-group">
-              <input class="form-control" type="text" name="username" value="" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-              <input class="form-control" type="text" name="username" value="" placeholder="Apellido">
-            </div>
-            <div class="form-group">
-              <input class="form-control" type="text" name="email" value="" placeholder="Correo electrónico">
-            </div>
-            <div class="form-group">
-              <input class="form-control" type="password" name="password" value="" placeholder="Contraseña">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block" name="button">Crear cuenta</button>
             <div class="form-group form-check">
             <br>
             <p>Al completar este registro declara ser mayor de 18 años y acepta nuestros <a href="#">términos y cóndiciones</a></p>
             <br>
             <p>¿Ya tienes una cuenta? <a href="login.html">Iniciá sesión</a></p>
-        </form>
-      </div>
+            </div>
+
+
       </div>
     </div>
-
+</div>
   </body>

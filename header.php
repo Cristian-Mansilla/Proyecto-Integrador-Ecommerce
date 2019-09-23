@@ -13,7 +13,7 @@
      </form>
       <div class="col-lg-3 row pt-lg-3 d-lg-block d-sm-none d-xs-none d-md-none">
         <a href="login.html" class=" borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white">Iniciar sesion</a>
-        <a href="registro.html" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
+        <a href="registro.php" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
       </div>
 
     </div>
@@ -57,7 +57,7 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <button class="dropdown-item" type="button"><a href="login.html" class="text-center pt-2 col-12 rounded p-1 ">Iniciar sesion</a></button>
-          <button class="dropdown-item backg-header" type="button"><a href="registro.html" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
+          <button class="dropdown-item backg-header" type="button"><a href="registro.php" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
