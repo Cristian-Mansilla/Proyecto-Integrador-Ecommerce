@@ -47,6 +47,13 @@
   border-radius: 5px;
   padding: 8px;
 }
+
+.ok {
+  background: #05ac05;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
 /*fin login*/
 /*register*/
 .box-register{

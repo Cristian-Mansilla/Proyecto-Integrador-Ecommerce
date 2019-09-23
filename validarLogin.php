@@ -21,7 +21,7 @@ if ($_POST) {
 
   if (!empty($password)) {
     foreach ($usuarios as $user) {
-      if ($user["usuario"] == $usuario and $user["contrasena"] != $password) {
+      if ($user["usuario"] === $usuario and $user["contrasena"] != $password) {
         $errores["errorPassword"] = "¡Contraseña incorrecta!";
       }
     }

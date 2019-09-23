@@ -28,6 +28,12 @@
                   <ion-icon name="close-circle-outline"></ion-icon>
                   <?=$errores["errorUsername"] ?>
                 </div>
+              <?php else: ?>
+                <?php if (isset($errores)): ?>
+                  <div class="ok">
+                    <ion-icon name="checkmark"></ion-icon>
+                  </div>
+                <?php endif; ?>
               <?php endif; ?>
             </div>
             <div class="form-group">
