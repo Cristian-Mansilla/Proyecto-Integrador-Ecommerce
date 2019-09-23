@@ -1,13 +1,18 @@
 <?php
 
 
+$rand_part = str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789".uniqid());
+
+
+
 
   if(isset($_POST["enviar"])) {
-    // llamo al archivo json usuarios
+    echo "Hola";
     $datos = file_get_contents("usuarios.json");
+    echo $datos;
+    echo "<br>";
     $usuarios = json_decode($datos, true);
-
-    // determino los valores de los post del formulario
+    var_dump($usuarios);
     $usuario = $_POST["username"];
     $apellido = $_POST["lastname"];
     $email = $_POST["email"];
@@ -16,14 +21,13 @@
       "usuario" => $usuario,
       "apellido" => $apellido,
       "email" => $email,
-      "contrasena" => $contrasena
+      "contrasena" => $contrasena,
+      "token" => $rand_part
     ];
-    // vuelvo a codificar y enviar los datos al archivo json
+    var_dump($usuarios);
     $jsonFinal = json_encode($usuarios);
     file_put_contents("usuarios.json", $jsonFinal);
-
-    // Envio al index si el registro esta completado
-    header("location:index.php");
+    // header("location:index.php");
   } else {
     echo "Debe llenar todos los campos.";
   }
