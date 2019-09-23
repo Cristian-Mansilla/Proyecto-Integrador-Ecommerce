@@ -41,6 +41,12 @@
   margin-right: 5px;
 }
 
+.error {
+  background: #e31717;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
 /*fin login*/
 /*register*/
 .box-register{

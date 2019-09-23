@@ -24,13 +24,19 @@
             <div class="form-group">
               <input class="form-control" type="text" name="username" value="" placeholder="Usuario">
               <?php if (!empty($errores["errorUsername"])): ?>
-                <?=$errores["errorUsername"] ?>
+                <div class="error">
+                  <ion-icon name="close-circle-outline"></ion-icon>
+                  <?=$errores["errorUsername"] ?>
+                </div>
               <?php endif; ?>
             </div>
             <div class="form-group">
               <input class="form-control" type="password" name="password" value="" placeholder="Contraseña">
               <?php if (!empty($errores["errorPassword"])): ?>
-                <?=$errores["errorPassword"] ?>
+                <div class="error">
+                  <ion-icon name="close-circle-outline"></ion-icon>
+                  <?=$errores["errorPassword"] ?>
+                </div>
               <?php endif; ?>
             </div>
             <button type="submit" class="btn btn-primary btn-block" name="button">Iniciar Sesión</button>
@@ -45,5 +51,6 @@
       </div>
     </div>
     <!--finaliza formulario iniciar seción-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
