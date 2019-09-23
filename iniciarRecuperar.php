@@ -28,6 +28,7 @@
 
       $jsonFinal = json_encode($usuarios);
       file_put_contents("usuarios.json", $jsonFinal);
+      header("location: cambiarPass.php");
       break;
   }
 }
