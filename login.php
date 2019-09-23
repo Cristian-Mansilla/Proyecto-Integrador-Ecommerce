@@ -1,3 +1,7 @@
+<?php
+  require_once("./validarLogin.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,7 +18,14 @@
       <div class="row justify-content-md-center margin-top">
         <div class="col-12 col-md-8 col-lg-6 p-4 bg-blue box-shadow position-relative">
           <img class="logo-user box-shadow" src="img/user.jpg" alt="">
-          <form action="validarLogin.php" method="post">
+          <form action="login.php" method="post">
+            <?php if (!empty($errores)): ?>
+              <ul>
+                <?php foreach ($errores as $error) : ?>
+                  <li><?=$error?></li>
+                <?php endforeach ; ?>
+              </ul>
+            <?php endif; ?>
             <h1>Iniciar Sesión</h1>
             <hr>
             <div class="form-group">

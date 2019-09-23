@@ -2,11 +2,37 @@
 $datos = file_get_contents("usuarios.json");
 $usuarios = json_decode($datos, true);
 
+if ($_POST) {
 
-    $password = $_POST["password"];
-    $usuario = $_POST["username"];
+  $password = trim($_POST["password"]);
+  $usuario = trim($_POST["username"]);
+  $errores = [];
+
+  // Valido que la información de los campos tienen el dato correcto
+  if (!empty($usuario)) {
+    foreach ($usuarios as $user) {
+      if ($user["usuario"] != $usuario) {
+        $errores[] = "¡El usuario no se encuentra registrado!";
+      }
+    }
+  } else {
+    $errores[] = "¡El nombre de usuario está vacío!";
+  }
+
+  if (!empty($password)) {
+    foreach ($usuarios as $user) {
+      if ($user["usuario"] == $usuario and $user["contrasena"] != $password) {
+        $errores[] = "¡Contraseña incorrecta!";
+      }
+    }
+  } else {
+    $errores[] = "¡La contraseña está vacía!";
+  }
+
+  // Si no hay errores
+  if (empty($errores)) {
     // VALIDACION Y CASO CORRECTO MANDA A INDEX
-  foreach ($usuarios as $user => $info){
+    foreach ($usuarios as $user => $info){
       if($info["usuario"] === $usuario && $info["contrasena"] === $password){
         $bandera = true;
         echo "<script>
@@ -19,9 +45,11 @@ $usuarios = json_decode($datos, true);
       };
     };
     // MENSAJE DE ERROR Y VUELVE A LOGIN
-  if($bandera == false){
-    echo "<script>
-            alert( 'Datos Incorrectos ');
-            window.location=  'login.html'
-          </script>";
-  };
+    if($bandera == false){
+      echo "<script>
+              alert( 'Datos Incorrectos ');
+              window.location=  'login.html'
+            </script>";
+    };
+  }
+}
