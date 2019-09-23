@@ -12,21 +12,21 @@ if ($_POST) {
   if (!empty($usuario)) {
     foreach ($usuarios as $user) {
       if ($user["usuario"] != $usuario) {
-        $errores[] = "¡El usuario no se encuentra registrado!";
+        $errores["errorUsername"] = "¡El usuario no se encuentra registrado!";
       }
     }
   } else {
-    $errores[] = "¡El nombre de usuario está vacío!";
+    $errores["errorUsername"] = "¡El nombre de usuario está vacío!";
   }
 
   if (!empty($password)) {
     foreach ($usuarios as $user) {
       if ($user["usuario"] == $usuario and $user["contrasena"] != $password) {
-        $errores[] = "¡Contraseña incorrecta!";
+        $errores["errorPassword"] = "¡Contraseña incorrecta!";
       }
     }
   } else {
-    $errores[] = "¡La contraseña está vacía!";
+    $errores["errorPassword"] = "¡La contraseña está vacía!";
   }
 
   // Si no hay errores

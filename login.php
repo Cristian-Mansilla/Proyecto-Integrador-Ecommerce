@@ -19,20 +19,19 @@
         <div class="col-12 col-md-8 col-lg-6 p-4 bg-blue box-shadow position-relative">
           <img class="logo-user box-shadow" src="img/user.jpg" alt="">
           <form action="login.php" method="post">
-            <?php if (!empty($errores)): ?>
-              <ul>
-                <?php foreach ($errores as $error) : ?>
-                  <li><?=$error?></li>
-                <?php endforeach ; ?>
-              </ul>
-            <?php endif; ?>
             <h1>Iniciar Sesión</h1>
             <hr>
             <div class="form-group">
               <input class="form-control" type="text" name="username" value="" placeholder="Usuario">
+              <?php if (!empty($errores["errorUsername"])): ?>
+                <?=$errores["errorUsername"] ?>
+              <?php endif; ?>
             </div>
             <div class="form-group">
               <input class="form-control" type="password" name="password" value="" placeholder="Contraseña">
+              <?php if (!empty($errores["errorPassword"])): ?>
+                <?=$errores["errorPassword"] ?>
+              <?php endif; ?>
             </div>
             <button type="submit" class="btn btn-primary btn-block" name="button">Iniciar Sesión</button>
             <div class="form-group form-check">
