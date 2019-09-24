@@ -14,14 +14,16 @@
      </form>
       <div class="col-lg-3 row pt-lg-3 d-lg-block d-sm-none d-xs-none d-md-none">
         <?php
-              if($_SESSION["usuarioLogueado"] == true){
+          if(isset($_SESSION["usuarioLogueado"])){
+              if($_SESSION["usuarioLogueado"]==true){
                   echo "Hola " . $_SESSION["usuario"];
                   echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Desloguear</a>";
 
               }else{
                 echo "<a href='login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white'>Iniciar sesion</a>";
                 echo "<a href='registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Registro</a>";
-              };
+              }
+            }
          ?>
         </div>
 
