@@ -1,3 +1,16 @@
+<?php
+  require_once ("validarRegistro.php");
+
+  if($_POST) {
+
+    $errores = validarRegistro();
+
+    if (empty($errores)) {
+      header("location: agregar.php"); exit;
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,7 +24,14 @@
     <div class="container">
       <div class="row justify-content-md-center margin-top">
       <div class="col-12 col-md-6 col-lg-8 box-register position-relative">
-        <form action="agregar.php" method="post">
+        <form action="registro.php" method="post">
+          <?php if (!empty($errores)): ?>
+            <ul>
+              <?php foreach ($errores as $error): ?>
+                <li><?=$error?></li>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
           <div class="form-group">
             <input class="form-control" type="text" name="username" value="" placeholder="Nombre">
           </div>
