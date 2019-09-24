@@ -12,7 +12,7 @@ if ($_POST) {
   if (!empty($usuario)) {
     foreach ($usuarios as $user) {
       if ($user["usuario"] != $usuario) {
-        $errores["errorUsername"] = "¡El usuario no se encuentra registrado!";
+        // $errores["errorUsername"] = "¡El usuario no se encuentra registrado!";
       }
     }
   } else {

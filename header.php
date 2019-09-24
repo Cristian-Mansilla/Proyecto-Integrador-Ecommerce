@@ -56,7 +56,7 @@
           <ion-icon name="menu"></ion-icon>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button"><a href="login.html" class="text-center pt-2 col-12 rounded p-1 ">Iniciar sesion</a></button>
+          <button class="dropdown-item" type="button"><a href="login.php" class="text-center pt-2 col-12 rounded p-1 ">Iniciar sesion</a></button>
           <button class="dropdown-item backg-header" type="button"><a href="registro.php" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
