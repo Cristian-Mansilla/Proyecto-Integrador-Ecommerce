@@ -2,7 +2,7 @@
   <div class="col-lg-3 col-md-5">
     <h3 class="col-12 text-white">Comprar y vender</h3>
     <ul class="list-unstyled">
-      <li class="ml-3"><a class="text-white text-decoration-none" href="#">Registro</a> </li>
+      <li class="ml-3"><a class="text-white text-decoration-none" href="registro.php">Registro</a> </li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Marcas</a> </li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Como comprar y vender</a> </li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Productos populares</a> </li>
@@ -29,8 +29,8 @@
     <h3 class="text-white col-12">Ayuda</h3>
     <ul class="list-unstyled">
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Atencion al cliente</a></li>
-      <li class="ml-3"><a class="text-white text-decoration-none" href="#">Gestionar compras</a></li>
-      <li class="ml-3"><a class="text-white text-decoration-none" href="#">Contacto</a></li>
+      <li class="ml-3"><a class="text-white text-decoration-none" href="faqs.php">Preguntas frecuentes</a></li>
+      <li class="ml-3"><a class="text-white text-decoration-none" href="contacto.php">Contacto</a></li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Reportar Problema</a></li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Medios de pago</a></li>
       <li class="ml-3"><a class="text-white text-decoration-none" href="#">Ayuda</a></li>
