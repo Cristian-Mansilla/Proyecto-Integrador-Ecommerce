@@ -1,4 +1,5 @@
-
+<?php session_start();
+?>
 <!-- HEADER ESCRITORIO -->
 
 
@@ -12,9 +13,17 @@
        <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit">Search</button>
      </form>
       <div class="col-lg-3 row pt-lg-3 d-lg-block d-sm-none d-xs-none d-md-none">
-        <a href="login.php" class=" borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white">Iniciar sesion</a>
-        <a href="registro.php" class="borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue">Registro</a>
-      </div>
+        <?php
+              if($_SESSION["usuarioLogueado"] == true){
+                  echo "Hola " . $_SESSION["usuario"];
+                  echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Desloguear</a>";
+
+              }else{
+                echo "<a href='login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white'>Iniciar sesion</a>";
+                echo "<a href='registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Registro</a>";
+              };
+         ?>
+        </div>
 
     </div>
       <!-- Header 2  -->

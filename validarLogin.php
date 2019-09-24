@@ -2,6 +2,9 @@
 $datos = file_get_contents("usuarios.json");
 $usuarios = json_decode($datos, true);
 
+
+
+
 if ($_POST) {
 
   $password = trim($_POST["password"]);
@@ -35,10 +38,14 @@ if ($_POST) {
     foreach ($usuarios as $user => $info){
       if($info["usuario"] === $usuario && $info["contrasena"] === $password){
         $bandera = true;
+        session_start();
+        $_SESSION["usuarioLogueado"] = true;
+        $_SESSION["usuario"] = $usuario;
         echo "<script>
                 alert( 'Bienvenido');
                 window.location=  'index.php'
               </script>";
+
         break;
       }else{
         $bandera = false;
