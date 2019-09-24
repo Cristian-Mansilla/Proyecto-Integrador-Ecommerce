@@ -7,7 +7,7 @@
   <!--Header 1  -->
   <div class="container">
     <div class="row d-flex justify-content-between p-2 col-md-12 col-lg-12">
-      <a href="#top" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
+      <a href="index.php" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
       <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6">
        <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" aria-label="Search">
        <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit">Search</button>
@@ -76,7 +76,7 @@
 
     </div>
     <div class="col-3 py-2 text-center">
-      <a href="#top" class=""><img src="img/index/logo-medio.png" height="35" width="35" class="rounded-circle" alt="LOGO"></a>
+      <a href="index.php" class=""><img src="img/index/logo-medio.png" height="35" width="35" class="rounded-circle" alt="LOGO"></a>
     </div>
     <div class="row col-5 justify-content-between py-2 text-center">
       <a href="#top" class="col-4 bg-dark p-2  text-white rounded"><ion-icon name="notifications"></ion-icon></a>
