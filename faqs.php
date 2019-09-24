@@ -25,7 +25,7 @@
       <div class="bg-blue pt-3 pb-1 mt-5">
         <div class="container">
           <ul>
-            <li class="d-inline"><a class="text-decoration-none anchorPersonalizado" href="index.html">Home</a></li>
+            <li class="d-inline"><a class="text-decoration-none anchorPersonalizado" href="index.php">Home</a></li>
             <span>/ /</span>
             <li class="d-inline">FAQS</li>
           </ul>

@@ -15,13 +15,13 @@
     <div class="container mt-2 pt-4 mb-2">
       <h2 class="text-center p-2" style="font-family:kanit;">Ponte en contacto con nosotros</h2>
       <form action="registro.php" class="row pt-4" method="post">
-        <div class="form-group col-4 " >
+        <div class="form-group col-lg-4 col-12 " >
           <input class="form-control bg-dark text-white" style="height:60px;" type="text" name="name" value="" placeholder="Nombre">
         </div>
-        <div class="form-group col-4" >
+        <div class="form-group col-lg-4 col-12" >
           <input class="form-control bg-dark text-white" style="height:60px;" type="text" name="phone" value="" placeholder="Telefono">
         </div>
-        <div class="form-group col-4" >
+        <div class="form-group col-lg-4 col-12" >
           <input class="form-control bg-dark text-white" style="height:60px;" type="email" name="email" value="" placeholder="Correo electrónico">
         </div>
         <div class="form-group col-12">
