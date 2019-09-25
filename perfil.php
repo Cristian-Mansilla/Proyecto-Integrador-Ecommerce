@@ -23,12 +23,16 @@
             </button>
             <span>¡Hola Usuario!</span>
             <div class="collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+              <ul class="nav navbar-nav" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Resumen </a>
+                  <a class="nav-link active" id="resumen-tab" href="#resumen" data-toggle="tab" role="tab" aria-controls="resumen" aria-selected="true">
+                    <i class="fa fa-list-alt"></i>Resumen
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><ion-icon name="card"></ion-icon> Facturación </a>
+                  <a class="nav-link" id="facturacion-tab" href="#facturacion" data-toggle="tab" role="tab" aria-controls="facturacion" aria-selected="false">
+                    <ion-icon name="card"></ion-icon>Facturación
+                  </a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,12 +59,18 @@
           </nav>
         </section>
       </div>
-    <div class="col-12 col-md-9">
-      <section class="content-perfil">
-        <!--contenido para los nav-items-->
-      </section>
+      <!--contenido para los nav-items-->
+      <div class="col-12 col-md-9">
+        <section class="tab-content">
+          <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="resumen-tab">
+            Contenido de Resumen en construcción
+          </div>
+          <div class="tab-pane fade show" id="facturacion" role="tabpanel" aria-labelledby="facturacion-tab">
+            Contenido de Facturación en construcción
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
     <!--finaliza seccion perfil-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
