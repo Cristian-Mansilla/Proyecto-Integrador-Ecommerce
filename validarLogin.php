@@ -15,12 +15,22 @@ if ($_POST) {
   if (!empty($usuario)) {
     foreach ($usuarios as $user) {
       if ($user["usuario"] != $usuario) {
-        // $errores["errorUsername"] = "¡El usuario no se encuentra registrado!";
+
+      }else{
+        $userBander = true;
       }
+
     }
   } else {
     $errores["errorUsername"] = "¡El nombre de usuario está vacío!";
   }
+
+
+  if($userBander == false){
+    $errores["errorUsername"] = "¡El usuario no se encuentra registrado!";
+  }
+
+
 
   if (!empty($password)) {
     foreach ($usuarios as $user) {
@@ -55,7 +65,7 @@ if ($_POST) {
     if($bandera == false){
       echo "<script>
               alert( 'Datos Incorrectos ');
-              window.location=  'login.html'
+              window.location=  'login.php'
             </script>";
     };
   }
