@@ -13,45 +13,54 @@
     <?php require_once("header.php"); ?>
 
     <!--inicia seccion perfil-->
-    <section class="perfil">
-      <nav class="navbar sticky-top navbar-light bg-celeste d-flex flex-column align-content-start icon-size">
-        <img class="logo-perfil" src="img/user.jpg" alt="">
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>
-        </button>
-        <span>¡Hola Usuario!</span>
-        <div class="collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Resumen </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="card"></ion-icon> Facturación </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-shopping-bag"></i>Compras
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-cog"></i>Configuración
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <section class="navbar-perfil">
+          <nav class="navbar sticky-top navbar-light bg-celeste d-flex flex-column align-items-center icon-size">
+            <img class="logo-perfil" src="img/user.jpg" alt="">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>
+            </button>
+            <span>¡Hola Usuario!</span>
+            <div class="collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Resumen </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><ion-icon name="card"></ion-icon> Facturación </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-shopping-bag"></i>Compras
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-cog"></i>Configuración
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    <div class="col-12 col-md-9">
+      <section class="content-perfil">
+        <!--contenido para los nav-items-->
+      </section>
+    </div>
+  </div>
     <!--finaliza seccion perfil-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
