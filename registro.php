@@ -5,6 +5,8 @@
 
     $errores = validarRegistro();
 
+    var_dump($errores);
+
     if (empty($errores)) {
       // llamo al archivo json usuarios
       $datos = file_get_contents("usuarios.json");
@@ -13,7 +15,7 @@
       $usuario = $_POST["username"];
       $apellido = $_POST["lastname"];
       $email = $_POST["email"];
-      $contrasena = $_POST["password"];
+      $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
       $usuarios[] = [
         "usuario" => $usuario,
         "apellido" => $apellido,
