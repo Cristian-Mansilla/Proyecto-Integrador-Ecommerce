@@ -14,8 +14,7 @@
      </form>
       <div class="col-lg-3 row pt-lg-3 d-lg-block d-sm-none d-xs-none d-md-none">
         <?php
-          if(isset($_SESSION["usuarioLogueado"])){
-              if($_SESSION["usuarioLogueado"]==true){
+              if($_SESSION["usuarioLogueado"] == true){
                   echo "Hola " . $_SESSION["usuario"];
                   echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Desloguear</a>";
 
