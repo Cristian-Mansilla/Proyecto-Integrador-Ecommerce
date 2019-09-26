@@ -17,7 +17,7 @@
       $nombre = $_POST["name"];
       $apellido = $_POST["lastname"];
       $email = $_POST["email"];
-      $imgPerfil = "imgPerfiles/" . $_POST["email"] . "/perfil." . $ext;
+      $imgPerfil = "imgPerfiles/" . $_POST["email"] . "/perfil." . $path;
       $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
       $usuarios[] = [
         "usuario" => $usuario,
