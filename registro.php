@@ -9,6 +9,7 @@
 
     if (empty($errores)) {
       // llamo al archivo json usuarios
+      require_once("validarImgRegistro.php");
       $datos = file_get_contents("usuarios.json");
       $usuarios = json_decode($datos, true);
       // determino los valores de los post del formulario
@@ -16,13 +17,15 @@
       $nombre = $_POST["name"];
       $apellido = $_POST["lastname"];
       $email = $_POST["email"];
+      $imgPerfil = "imgPerfiles/" . $_POST["email"] . "/perfil." . $ext;
       $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
       $usuarios[] = [
         "usuario" => $usuario,
         "apellido" => $apellido,
         "nombre" => $nombre,
         "email" => $email,
-        "contrasena" => $contrasena
+        "contrasena" => $contrasena,
+        "imgPerfil" => $imgPerfil
       ];
       // vuelvo a codificar y enviar los datos al archivo json
       $jsonFinal = json_encode($usuarios);
@@ -46,7 +49,7 @@
     <div class="container">
       <div class="row justify-content-md-center margin-top">
       <div class="col-12 col-md-6 col-lg-8 box-register position-relative">
-        <form action="registro.php" method="post">
+        <form action="registro.php" enctype="multipart/form-data" method="post">
           <?php if (!empty($errores)): ?>
             <ul>
               <?php foreach ($errores as $error): ?>
@@ -68,6 +71,9 @@
           </div>
           <div class="form-group">
             <input class="form-control" type="password" name="password" value="" placeholder="Contraseña">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="file" name="imgPerfil" value="">
           </div>
           <button type="submit" class="btn btn-primary" name="enviar" value="Enviar">Crear cuenta</button>
         </form>
