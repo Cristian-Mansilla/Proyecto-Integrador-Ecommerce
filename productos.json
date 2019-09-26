@@ -1,1 +1,1 @@
-[{"ruta":"img\/index\/celular.jpeg"},{"ruta":"img\/index\/televisor.jpeg"},{"ruta":"img\/index\/computadora.jpeg"}]
+[{"ruta":"img\/index\/celular.jpeg","titulo":"producto1","precio":"200"},{"ruta":"img\/index\/televisor.jpeg","titulo":"producto2","precio":"$ 300"},{"ruta":"img\/index\/computadora.jpeg","titulo":"producto3","precio":"$ 200"}]
