@@ -1,3 +1,20 @@
+<?php
+  $compras = [
+    ["name" => "Favoritos", "id" => "favoritos-tab", "href" => "#favoritos", "aria-control" => "favoritos"],
+    ["name" => "Compras", "id" => "compras-tab", "href" => "#compras", "aria-control" => "compras"],
+    ["name" => "Preguntas", "id" => "preguntas-tab", "href" => "#preguntas", "aria-control" => "preguntas"]
+  ];
+  $config = [
+    ["name" => "Mis datos", "id" => "misDatos-tab", "href" => "#misDatos", "aria-control" => "misDatos"],
+    ["name" => "Seguridad", "id" => "seguridad-tab", "href" => "#seguridad", "aria-control" => "seguridad"],
+    ["name" => "E-mails", "id" => "eMails-tab", "href" => "#eMails", "aria-control" => "eMails"]
+  ];
+  $tabContent = [
+    ["id" => "resumen", "aria-labelledby" => "resumen-tab", "content" => "pagina externa?"],
+    ["id" => "facturacion", "aria-labelledby" => "facturacion-tab", "content" => "pagina externa?"],
+    ["id" => "favoritos", "aria-labelledby" => "favoritos-tab", "content" => "pagina externa?"],
+  ]
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -39,9 +56,9 @@
                     <i class="fa fa-shopping-bag"></i>Compras
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <?php foreach ($compras as $item) : ?>
+                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false"><?=$item["name"]?></a>
+                    <?php endforeach; ?>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -49,9 +66,9 @@
                     <i class="fa fa-cog"></i>Configuración
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <?php foreach ($config as $item) : ?>
+                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false"><?=$item["name"]?></a>
+                    <?php endforeach; ?>
                   </div>
                 </li>
               </ul>
@@ -62,12 +79,11 @@
       <!--contenido para los nav-items-->
       <div class="col-12 col-md-9">
         <section class="tab-content">
-          <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="resumen-tab">
-            Contenido de Resumen en construcción
-          </div>
-          <div class="tab-pane fade show" id="facturacion" role="tabpanel" aria-labelledby="facturacion-tab">
-            Contenido de Facturación en construcción
-          </div>
+          <?php foreach ($tabContent as $content): ?>
+            <div class="tab-pane fade show" id="<?=$content["id"]?>" role="tabpanel" aria-labelledby="<?=$content["aria-labelledby"]?>">
+              Contenido de <?=$content["id"]?> en construcción!
+            </div>
+          <?php endforeach; ?>
         </section>
       </div>
     </div>
