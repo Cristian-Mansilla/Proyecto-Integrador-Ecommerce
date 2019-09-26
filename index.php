@@ -52,10 +52,7 @@
           <h2 class="col-12 border-bottom border-secondary">Lo mas vendido</h2>
           <div class="row col-12  justify-content-between text-center" >
 
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/celular.jpeg" class=" rounded-circle"  alt="Producto1"></a>
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/televisor.jpeg" class="  rounded-circle" alt="Producto2"></a>
-            <a href="#top" class="col-lg-3 col-md-6 mt-md-6 col-sm-6 col-12"><img src="img/index/computadora.jpeg" class=" rounded-circle" alt="Producto3"></a>
-
+            <?php require("imprimirProds.php") ?>
           </div>
           <br><br><br>
           <!-- CATEGORIAS MAS BUSCADAS -->
