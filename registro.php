@@ -13,12 +13,14 @@
       $usuarios = json_decode($datos, true);
       // determino los valores de los post del formulario
       $usuario = $_POST["username"];
+      $nombre = $_POST["name"];
       $apellido = $_POST["lastname"];
       $email = $_POST["email"];
       $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
       $usuarios[] = [
         "usuario" => $usuario,
         "apellido" => $apellido,
+        "nombre" => $nombre,
         "email" => $email,
         "contrasena" => $contrasena
       ];
@@ -53,7 +55,10 @@
             </ul>
           <?php endif; ?>
           <div class="form-group">
-            <input class="form-control" type="text" name="username" value="" placeholder="Nombre">
+            <input class="form-control" type="text" name="username" value="" placeholder="Usuario">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" value="" placeholder="Nombre">
           </div>
           <div class="form-group">
             <input class="form-control" type="text" name="lastname" value="" placeholder="Apellido">
