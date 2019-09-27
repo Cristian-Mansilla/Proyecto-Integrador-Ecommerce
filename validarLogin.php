@@ -34,7 +34,7 @@ if ($_POST) {
 
   if (!empty($password)) {
     foreach ($usuarios as $user) {
-      if ($user["usuario"] === $usuario and $user["contrasena"] != $password) {
+      if ($user["usuario"] == $usuario and !password_verify($password, $user["contrasena"])) {
         $errores["errorPassword"] = "¡Contraseña incorrecta!";
       }
     }
@@ -46,7 +46,7 @@ if ($_POST) {
   if (empty($errores)) {
     // VALIDACION Y CASO CORRECTO MANDA A INDEX
     foreach ($usuarios as $user => $info){
-      if($info["usuario"] === $usuario && $info["contrasena"] === $password){
+      if($info["usuario"] == $usuario && password_verify($password, $info["contrasena"])){
         $bandera = true;
         session_start();
         $_SESSION["usuarioLogueado"] = true;

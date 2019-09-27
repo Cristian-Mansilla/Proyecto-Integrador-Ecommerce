@@ -1,7 +1,7 @@
 <?php
   require_once("./validarLogin.php");
 
-  
+
 ?>
 
 <!DOCTYPE html>
