@@ -13,7 +13,12 @@
     ["id" => "resumen", "aria-labelledby" => "resumen-tab", "content" => "pagina externa?"],
     ["id" => "facturacion", "aria-labelledby" => "facturacion-tab", "content" => "pagina externa?"],
     ["id" => "favoritos", "aria-labelledby" => "favoritos-tab", "content" => "pagina externa?"],
-  ]
+    ["id" => "compras", "aria-labelledby" => "compras-tab", "content" => "pagina externa?"],
+    ["id" => "preguntas", "aria-labelledby" => "preguntas-tab", "content" => "pagina externa?"],
+    ["id" => "misDatos", "aria-labelledby" => "misDatos-tab", "content" => "pagina externa?"],
+    ["id" => "seguridad", "aria-labelledby" => "favoritos-tab", "content" => "pagina externa?"],
+    ["id" => "eMails", "aria-labelledby" => "eMails-tab", "content" => "pagina externa?"],
+  ];
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -80,9 +85,15 @@
       <div class="col-12 col-md-9">
         <section class="tab-content">
           <?php foreach ($tabContent as $content): ?>
-            <div class="tab-pane fade show" id="<?=$content["id"]?>" role="tabpanel" aria-labelledby="<?=$content["aria-labelledby"]?>">
-              Contenido de <?=$content["id"]?> en construcción!
-            </div>
+            <?php if ($content["id"] == "resumen"): ?>
+              <div class="tab-pane fade show active" id="<?=$content["id"]?>" role="tabpanel" aria-labelledby="<?=$content["aria-labelledby"]?>">
+                Contenido de <?=$content["id"]?> en construcción!
+              </div>
+            <?php else: ?>
+              <div class="tab-pane fade show" id="<?=$content["id"]?>" role="tabpanel" aria-labelledby="<?=$content["aria-labelledby"]?>">
+                Contenido de <?=$content["id"]?> en construcción!
+              </div>
+            <?php endif; ?>
           <?php endforeach; ?>
         </section>
       </div>
