@@ -56,23 +56,27 @@
                     <ion-icon name="card"></ion-icon>Facturación
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#comprasDropdown" aria-controls="comprasDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-shopping-bag"></i>Compras
                   </a>
-                  <div class="collapse" id="comprasDropdown">
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <?php foreach ($compras as $item) : ?>
-                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false"><?=$item["name"]?></a>
+                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false">
+                        <?=$item["name"]?>
+                      </a>
                     <?php endforeach; ?>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#configDropdown" aria-controls="configDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-cog"></i>Configuración
                   </a>
-                  <div class="collapse" id="configDropdown">
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <?php foreach ($config as $item) : ?>
-                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false"><?=$item["name"]?></a>
+                      <a class="dropdown-item" id="<?=$item["id"]?>" href="<?=$item["href"]?>" data-toggle="tab" role="tab" aria-controls="<?=$item["aria-controls"]?>" aria-selected="false">
+                        <?=$item["name"]?>
+                      </a>
                     <?php endforeach; ?>
                   </div>
                 </li>
