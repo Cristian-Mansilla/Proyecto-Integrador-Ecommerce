@@ -8,8 +8,8 @@
   <div class="container">
     <div class="row d-flex justify-content-between p-2 col-md-12 col-lg-12">
       <a href="index.php" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
-      <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6">
-       <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" aria-label="Search">
+      <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6" action ="mostrarProd.php" method="post">
+       <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" name="q" aria-label="Search">
        <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit" >Search</button>
      </form>
 
@@ -77,8 +77,26 @@
           <ion-icon name="menu"></ion-icon>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button"><a href="login.php" class="text-center pt-2 col-12 rounded p-1 ">Iniciar sesion</a></button>
-          <button class="dropdown-item backg-header" type="button"><a href="registro.php" class="text-center pt-2 col-12 rounded text-white p-1">Registro</a></button>
+          <?php
+
+            if(isset($_SESSION["usuarioLogueado"])){
+
+                if($_SESSION["usuarioLogueado"] == true){
+                    $rutaindex = $_SESSION["imgPerfil"];
+                    echo "<button class='dropdown-item' type='butto'><a href='perfil.php' class='text-center pt-2 col-12 rounded p-1 '>Perfil</a></button>";
+                    echo "<button class='dropdown-item' type='butto'><a href='desloguear.php' class='text-center pt-2 col-12 rounded p-1 '>Desloguear</a></button>";
+
+                } else{
+                  echo "<button class='dropdown-item' type='butto'><a href='login.php' class='text-center pt-2 col-12 rounded p-1 '>Iniciar sesion</a></button>";
+                  echo "<button class='dropdown-item backg-header' type='button'><a href='registro.php' class='text-center pt-2 col-12 rounded text-white p-1'>Registro</a></button>";
+                }
+            }else{
+              echo "<button class='dropdown-item' type='butto'><a href='login.php' class='text-center pt-2 col-12 rounded p-1 '>Iniciar sesion</a></button>";
+              echo "<button class='dropdown-item backg-header' type='button'><a href='registro.php' class='text-center pt-2 col-12 rounded text-white p-1'>Registro</a></button>";
+            }
+
+
+           ?>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
