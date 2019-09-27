@@ -1,7 +1,7 @@
 <?php
   function validarRegistro() {
-
-    $nombre = trim($_POST['username']);
+    $usuario = trim($_POST['username']);
+    $nombre = trim($_POST['name']);
 		$apellido = trim($_POST['lastname']);
 		$email = trim($_POST['email']);
 		$contrasenia = trim($_POST['password']);
@@ -51,8 +51,22 @@
       $errores[] = "La imagen debe estar en formato jpg, jpeg o png";
     }
   }
+  $datos = file_get_contents("usuarios.json");
+  $usuarios = json_decode($datos, true);
+  foreach ($usuarios as $usuario) {
+    if ($usuario["usuario"] === $usuario){
+      $errores[] = "El usuario ingresado ya esta en uso";
+      break;
+    }
 
+  }
+  foreach ($usuarios as $usuario) {
+    if ($usuario["email"] === $email){
+      $errores[] = "El mail ingresado ya esta en uso";
+      break;
+    }
 
+  }
 
     return $errores;
   }
