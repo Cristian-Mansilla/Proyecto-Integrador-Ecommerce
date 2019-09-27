@@ -40,11 +40,11 @@
         <section class="navbar-perfil">
           <nav class="navbar sticky-top navbar-light bg-celeste d-flex flex-column align-items-center icon-size">
             <img class="logo-perfil" src="img/user.jpg" alt="">
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
               <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>
             </button>
             <span>¡Hola Usuario!</span>
-            <div class="collapse" id="navbarNavDropdown">
+            <div class="collapse show" id="navbarNavDropdown">
               <ul class="nav navbar-nav" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="resumen-tab" href="#resumen" data-toggle="tab" role="tab" aria-controls="resumen" aria-selected="true">
