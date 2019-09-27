@@ -7,6 +7,9 @@
 		$contrasenia = trim($_POST['password']);
     $errores = [];
 
+
+
+
     if (!empty($nombre)) {
       if (strlen($nombre) < 2) {
         $errores[] = "¡El nombre es muy corto!";
@@ -23,6 +26,7 @@
       $errores[] = "¡Su apellido está vacío!";
     }
 
+
     if (!empty($email)) {
       if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errores[] = "Ingrese una dirección de correo valida";
@@ -38,6 +42,17 @@
     } else {
       $errores[] = "¡Necesita una contraseña!";
     }
+  if($_FILES["imgPerfil"]["error"] == 0){
+    $nombre = $_FILES["imgPerfil"]["name"];
+    $path = pathinfo($nombre, PATHINFO_EXTENSION);
+    if($path === "jpg" || $path === "jpeg" || $path == "png"){
+      $nada = "nada";
+    }else{
+      $errores[] = "La imagen debe estar en formato jpg, jpeg o png";
+    }
+  }
+
+
 
     return $errores;
   }

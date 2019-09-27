@@ -5,7 +5,7 @@
 
     $errores = validarRegistro();
 
-    var_dump($errores);
+    // var_dump($errores);
 
     if (empty($errores)) {
       // llamo al archivo json usuarios
