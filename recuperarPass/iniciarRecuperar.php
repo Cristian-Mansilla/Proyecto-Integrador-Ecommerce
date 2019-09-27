@@ -1,7 +1,7 @@
 <?php
   $rand_part = str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789".uniqid());
 
-  $datos = file_get_contents("usuarios.json");
+  $datos = file_get_contents("../usuarios.json");
   $usuarios = json_decode($datos, true);
   var_dump($usuarios);
   $mailIncorrecto = true;
@@ -27,7 +27,7 @@
 
 
       $jsonFinal = json_encode($usuarios);
-      file_put_contents("usuarios.json", $jsonFinal);
+      file_put_contents("../usuarios.json", $jsonFinal);
       header("location: cambiarPass.php");
       break;
   }

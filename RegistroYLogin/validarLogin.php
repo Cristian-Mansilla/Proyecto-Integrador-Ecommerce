@@ -1,5 +1,5 @@
 <?php
-$datos = file_get_contents("usuarios.json");
+$datos = file_get_contents("../usuarios.json");
 $usuarios = json_decode($datos, true);
 
 
@@ -55,7 +55,7 @@ if ($_POST) {
         $_SESSION["imgPerfil"] = $info["imgPerfil"];
         echo "<script>
                 alert( 'Bienvenido');
-                window.location=  'index.php'
+                window.location=  '../index.php'
               </script>";
 
         break;
@@ -67,7 +67,7 @@ if ($_POST) {
     if($bandera == false){
       echo "<script>
               alert( 'Datos Incorrectos ');
-              window.location=  'login.php'
+              window.location=  '../login.php'
             </script>";
     };
   }

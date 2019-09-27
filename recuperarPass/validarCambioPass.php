@@ -1,6 +1,6 @@
 <?php
 
-$datos = file_get_contents("usuarios.json");
+$datos = file_get_contents("../usuarios.json");
 $usuarios = json_decode($datos, true);
 $passNueva = $_POST["password"];
 $pasNueva2 = $_POST["password2"];
@@ -14,8 +14,8 @@ for ($i=0; $i < $cant ; $i++) {
         $usuarios[$i]["contrasena"] = $pasNueva2;
         echo "Contraseña cambiada correctamente";
         $jsonFinal = json_encode($usuarios);
-        file_put_contents("usuarios.json", $jsonFinal);
-        header("location: index.php");
+        file_put_contents("../usuarios.json", $jsonFinal);
+        header("location: ../index.php");
       }else {
         echo "Las contraseñas ingresadas no son iguales";
       }

@@ -10,7 +10,7 @@
     if (empty($errores)) {
       // llamo al archivo json usuarios
       require_once("validarImgRegistro.php");
-      $datos = file_get_contents("usuarios.json");
+      $datos = file_get_contents("../usuarios.json");
       $usuarios = json_decode($datos, true);
       // determino los valores de los post del formulario
       $usuario = $_POST["username"];
@@ -29,9 +29,9 @@
       ];
       // vuelvo a codificar y enviar los datos al archivo json
       $jsonFinal = json_encode($usuarios);
-      file_put_contents("usuarios.json", $jsonFinal);
+      file_put_contents("../usuarios.json", $jsonFinal);
       // Envio al index si el registro esta completado
-      header("location:index.php");
+      header("location:../index.php");
     }
   }
 ?>
@@ -43,7 +43,7 @@
     <title>Ecommerce | Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="../css/master.css">
   </head>
   <body class="body-register">
     <div class="container">
@@ -82,7 +82,7 @@
             <br>
             <p>Al completar este registro declara ser mayor de 18 años y acepta nuestros <a href="#">términos y cóndiciones</a></p>
             <br>
-            <p>¿Ya tienes una cuenta? <a href="login.html">Iniciá sesión</a></p>
+            <p>¿Ya tienes una cuenta? <a href="login.php">Iniciá sesión</a></p>
             </div>
 
 
