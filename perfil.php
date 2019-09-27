@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <body class="bg-perfil">
 
     <?php require_once("header.php"); ?>
 
@@ -38,7 +38,7 @@
     <div class="row">
       <div class="col-12 col-md-3">
         <section class="navbar-perfil">
-          <nav class="navbar sticky-top navbar-light bg-celeste d-flex flex-column align-items-center icon-size">
+          <nav class="navbar sticky-top navbar-light bg-celeste d-flex flex-column align-items-center icon-size rounded-right shadow-sm">
             <img class="logo-perfil" src="img/user.jpg" alt="">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
               <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>

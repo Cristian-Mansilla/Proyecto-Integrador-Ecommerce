@@ -291,6 +291,13 @@
 }
 /*fin faqs*/
 /*perfil*/
+.bg-perfil {
+    background-image: url("../img/bg-perfil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .bg-celeste {
   background: #e3f2fd;
 }
