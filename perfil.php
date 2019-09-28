@@ -10,14 +10,14 @@
     ["name" => "E-mails", "id" => "eMails-tab", "href" => "#eMails", "aria-control" => "eMails"]
   ];
   $tabContent = [
-    ["id" => "resumen", "aria-labelledby" => "resumen-tab", "content" => "pagina externa?"],
-    ["id" => "facturacion", "aria-labelledby" => "facturacion-tab", "content" => "pagina externa?"],
-    ["id" => "favoritos", "aria-labelledby" => "favoritos-tab", "content" => "pagina externa?"],
-    ["id" => "compras", "aria-labelledby" => "compras-tab", "content" => "pagina externa?"],
-    ["id" => "preguntas", "aria-labelledby" => "preguntas-tab", "content" => "pagina externa?"],
-    ["id" => "misDatos", "aria-labelledby" => "misDatos-tab", "content" => "pagina externa?"],
-    ["id" => "seguridad", "aria-labelledby" => "favoritos-tab", "content" => "pagina externa?"],
-    ["id" => "eMails", "aria-labelledby" => "eMails-tab", "content" => "pagina externa?"],
+    ["id" => "resumen", "aria-labelledby" => "resumen-tab", "pagina" => "pagina externa?"],
+    ["id" => "facturacion", "aria-labelledby" => "facturacion-tab", "pagina" => "pagina externa?"],
+    ["id" => "favoritos", "aria-labelledby" => "favoritos-tab", "pagina" => "pagina externa?"],
+    ["id" => "compras", "aria-labelledby" => "compras-tab", "pagina" => "pagina externa?"],
+    ["id" => "preguntas", "aria-labelledby" => "preguntas-tab", "pagina" => "pagina externa?"],
+    ["id" => "misDatos", "aria-labelledby" => "misDatos-tab", "pagina" => "Mis datos.php"],
+    ["id" => "seguridad", "aria-labelledby" => "favoritos-tab", "pagina" => "pagina externa?"],
+    ["id" => "eMails", "aria-labelledby" => "eMails-tab", "pagina" => "pagina externa?"],
   ];
 ?>
 <!DOCTYPE html>
@@ -95,7 +95,7 @@
               </div>
             <?php else: ?>
               <div class="tab-pane fade show" id="<?=$content["id"]?>" role="tabpanel" aria-labelledby="<?=$content["aria-labelledby"]?>">
-                Contenido de <?=$content["id"]?> en construcción!
+                <?php include_once("./perfil.component/".$content["pagina"]); ?>
               </div>
             <?php endif; ?>
           <?php endforeach; ?>
