@@ -12,8 +12,23 @@
   <body>
     <?php require("header.php"); ?>
 
-    <div class="container-fluid">
-      <div class="container row justify-content-between ml-5">
+
+    <div class="container-fluid row m-3">
+      <div class="container row col-3">
+        <ul style="list-style:none;">
+
+
+          <?php
+          $cate = ["televisor", "celulares", "computadoras"];
+          foreach ($cate as $key) {
+            echo "<li><a href='categorias.php?categoria=$key'>$key</a></li>";
+          } ?>
+
+        </ul>
+
+      </div>
+
+      <div class="container row justify-content-between col-9">
         <?php require("imprimirProds.php"); ?>
       </div>
     </div>
@@ -24,6 +39,7 @@
 
 
     <?php require("footer.php"); ?>
+
 
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

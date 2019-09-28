@@ -45,13 +45,13 @@
           Categorias
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Hogar</a>
-            <a class="dropdown-item" href="#">Tecnologia</a>
-            <a class="dropdown-item" href="#">Deportes</a>
+            <a class="dropdown-item" href="categorias.php?categoria=hogar">Hogar</a>
+            <a class="dropdown-item" href="categorias.php?categoria=tecnologia">Tecnologia</a>
+            <a class="dropdown-item" href="categorias.php?categoria=deportes">Deportes</a>
           </div>
           <div class="col-8 row justify-content-between">
             <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Canjear cupon</a>
-            <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Ofertas</a>
+            <a href="categorias.php?categoria=oferta" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Ofertas</a>
             <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">¿Quienes somos?</a>
             <a href="#top" class="text-center text-white pt-2 bg-dark col-2 rounded p-1">Ayuda</a>
           </div>
@@ -98,7 +98,7 @@
 
            ?>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
-          <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
+          <button class="dropdown-item" type="button"><a href="categorias.php?categoria=oferta" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
           <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ayuda</a></button>
 
