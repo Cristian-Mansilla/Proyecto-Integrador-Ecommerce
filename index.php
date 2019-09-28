@@ -61,10 +61,10 @@
             <h2 class="text-center">CATEGORIAS MAS BUSCADAS</h2>
             <br><br>
           <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center  p-sm-5 p-lg-0 ">
-            <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2  pl-sm-5 m-sm-2  bg-dark"><ion-icon name="laptop"></ion-icon></a>
-            <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="phone-portrait"></ion-icon></a>
+            <a href="categorias.php?categoria=computadoras" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2  pl-sm-5 m-sm-2  bg-dark"><ion-icon name="laptop"></ion-icon></a>
+            <a href="categorias.php?categoria=celulares" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="phone-portrait"></ion-icon></a>
             <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="home"></ion-icon></a>
-            <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="football"></ion-icon></a>
+            <a href="categorias.php?categoria=televisor" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="desktop"></ion-icon></a>
           </div>
           <div class="back-black">
             <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center p-sm-5 p-lg-0">
