@@ -4,3 +4,8 @@
   border-right: 1px solid gray !important;
   border-bottom: 1px solid gray !important;
 }
+
+.inflate:hover {
+  font-size: 20px;
+  padding: 5px 10px;
+}

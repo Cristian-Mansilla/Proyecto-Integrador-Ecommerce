@@ -12,6 +12,6 @@
       <input class="form-control border-br" type="text" name="" value="" placeholder="Apellido">
       <input class="form-control border-br" type="email" name="" value="" placeholder="E-mail">
     </div>
-    <button class="btn btn-success mx-auto d-block"  type="submit" name="guardar">Guardar</button>
+    <button class="btn btn-success mx-auto d-block inflate"  type="submit" name="guardar">Guardar</button>
   </form>
 </div>
