@@ -1,4 +1,4 @@
-<div class="">
+<div class="border-left mt-4 pl-4 pr-4">
   <h1>Mis Datos</h1>
   <form class="" action="" method="post">
     <div class="form-group">
@@ -12,5 +12,6 @@
       <input class="form-control border-br" type="text" name="" value="" placeholder="Apellido">
       <input class="form-control border-br" type="email" name="" value="" placeholder="E-mail">
     </div>
+    <button class="btn btn-success" type="submit" name="Guardar">Guardar</button>
   </form>
 </div>
