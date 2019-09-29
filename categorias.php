@@ -19,9 +19,50 @@
 
 
           <?php
-          $cate = ["televisor", "celulares", "computadoras"];
-          foreach ($cate as $key) {
-            echo "<li><a href='categorias.php?categoria=$key'>$key</a></li>";
+          $cates = [
+          "electronicaAudioYVideo" => [
+                        "ruta" => "electronicaAudioYVideo",
+                        "nombre" => "Electrónica, Audio y Video ",
+                        "subCategorias" => ["TV", "ComponentesElectronicos", "Audio", "Cables"]
+                                      ],
+          "celularesTelefonos" => [
+                        "ruta" => "celularesTelefonos",
+                        "nombre" => "Celulares y Teléfonos",
+                        "subCategorias" => ["AccesoriosCelulares", "Celulares", "Otros"]
+                                  ],
+          "computacion" => [
+                        "ruta" => "computacion",
+                        "nombre" => "Computacíon",
+                        "subCategorias" => ["Alamacenamiento", "USB", "ComponentesDePC", "Laptops", "Monitores", "Mouses"]
+                           ],
+          "hogar" => [
+                        "ruta" => "hogar",
+                        "nombre" => "Hogar",
+                        "subCategorias" => ["AdornosYDecoracion", "BazarYCocina", "ColchonesYSommiers", "IluminacionParaHogar"]
+                     ],
+          "consolasYJuegos" => [
+                        "ruta" => "consolasYJuegos",
+                        "nombre"=> "Consolas y Juegos",
+                        "subCategorias" => ["Consolas", "Videojuegos"]
+                               ],
+          "deporteYFitness" => [
+                        "ruta" => "deporteYFitness",
+                        "nombre" => "Deporte y Fitness",
+                        "subCategorias" => ["Boxeo", "Basquet", "Futbol", "Golf", "Tennis"]
+                               ],
+          "herramientasYConstruccion" => [
+                        "ruta" => "herramientasYConstruccion",
+                        "nombre" => "Herramientas y Construcción",
+                        "subCategorias" => ["Aberturas", "Electricidad", "Herramientas", "Pintureria"]
+                                         ]
+                        ];
+          // echo "<pre>";
+          // print_r($cates);
+          // echo "</pre>";
+          foreach ($cates as $cate) {
+            $nombre = $cate["nombre"];
+            $ruta2 = $cate["ruta"];
+            echo "<li><a href='categorias.php?categoria=$ruta2'>$nombre</a></li> ";
           } ?>
 
         </ul>
