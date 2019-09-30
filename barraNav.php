@@ -82,17 +82,17 @@
 .mNav{margin: 0 auto}
 li{list-style: none;}
 li a{text-decoration: none;}
-.dDown{position: absolute; width: 150px;top: 41px; opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
+.dDown{position: absolute;; width: 150px;top: 41px; opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
 .mNav li{float: left;padding: 5px;background: rgb(52, 152, 219);border-left: 1px dotted #fff;}
 .mNav li:first-child{border: none;}
-.mNav li a{ display: block;padding: 2px 20px;color: #fff;font-family: arial;}
+.mNav li a{ display: block;padding: 2px 20px;color: #fff;font-family: arial; text-decoration: none;}
 .mNav li:hover{background: #fff;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
-.mNav li:hover a{color: maroon;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+.mNav li:hover a{color: rgb(52, 152, 219);transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 /*First Level*/
 .subs {left: -45px;position: relative;top: 0px;width: 175px;border-left: none !important; border-bottom: 1px dotted #fff !important;}
 .subs:last-child{border: none !important;}
 .hassubs:hover .dDown,.hassubs .hassubs:hover .dDown{opacity: 1;visibility: visible; transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
-.mNav li:hover ul a,.mNav li:hover ul li ul li a{color: white;}
+.mNav li:hover ul a,.mNav li:hover ul li ul li a{color: white; text-decoration: none;}
 .mNav li ul li:hover,.mNav li ul li ul li:hover{background: #fff;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 .mNav li ul li:hover a,.mNav li ul li ul li:hover a{color: rgb(52, 152, 219);transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 /*Second Level*/
@@ -106,7 +106,7 @@ li a{text-decoration: none;}
               <?php
               foreach ($cates as $cate) {
                 $nombrecat = $cate["nombre"];
-                echo "<li class='subs hassubs'><a href='#'>$nombrecat</a>
+                echo "<li class='subs hassubs''><a href='#'>$nombrecat</a>
                     <ul class='dDown'>";
                 $subcats = $cate["subCategorias"];
 

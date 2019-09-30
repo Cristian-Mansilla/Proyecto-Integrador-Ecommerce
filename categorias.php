@@ -14,7 +14,9 @@
 
 
     <div class="container-fluid row m-3">
-
+      <div class="col-2 border mt-4">
+        <h5 class="text-center">Categorias <br>en construccion...</h2>
+      </div>
       <div class="container row justify-content-between col-9">
         <?php require("imprimirProds.php"); ?>
       </div>

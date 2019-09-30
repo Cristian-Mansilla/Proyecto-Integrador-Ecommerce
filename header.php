@@ -9,7 +9,7 @@
       <a href="index.php" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
       <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6" action ="mostrarProd.php" method="post">
        <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" name="q" aria-label="Search">
-       <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white borde-blanco" type="submit" >Search</button>
+       <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white text-decoration-none borde-blanco" type="submit" >Search</button>
      </form>
 
       <div class="col-lg-3 row pt-lg-3 d-lg-block d-sm-none d-xs-none d-md-none">
@@ -19,16 +19,16 @@
 
               if($_SESSION["usuarioLogueado"] == true){
                   $rutaindex = $_SESSION["imgPerfil"];
-                  echo  "<a href='perfil.php' class='rounded col-7 m-1 p-2 text-center text-white'><img style='height:50px; width:50px'  src='$rutaindex' alt='imgPerfil'></a>";
-                  echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Desloguear</a>";
+                  echo  "<a href='perfil.php' class='rounded col-7 m-1 p-2 text-center text-white text-decoration-none'><img style='height:50px; width:50px'  src='$rutaindex' alt='imgPerfil'></a>";
+                  echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center text-decoration-none color-lightBlue'>Desloguear</a>";
 
               } else{
-                echo "<a href='RegistroYLogin/login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white'>Iniciar sesion</a>";
-                echo "<a href='RegistroYLogin/registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Registro</a>";
+                echo "<a href='RegistroYLogin/login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-decoration-none text-white'>Iniciar sesion</a>";
+                echo "<a href='RegistroYLogin/registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center text-decoration-none color-lightBlue'>Registro</a>";
               }
           }else{
-            echo "<a href='RegistroYLogin/login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white'>Iniciar sesion</a>";
-            echo "<a href='RegistroYLogin/registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center color-lightBlue'>Registro</a>";
+            echo "<a href='RegistroYLogin/login.php' class=' borde-blanco pt-1   rounded col-7 m-1 p-2 text-center text-white text-decoration-none'>Iniciar sesion</a>";
+            echo "<a href='RegistroYLogin/registro.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center text-decoration-none color-lightBlue'>Registro</a>";
 
           }
 
