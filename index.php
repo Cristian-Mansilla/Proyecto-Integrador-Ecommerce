@@ -48,32 +48,79 @@
           <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Baner Tarjetas 2" class="col-lg-6 d-lg-block d-sm-none d-md-none d-none ">
         </div>
         <!-- Mas Vendidos -->
-        <h2 class="text-center color-lightBlue"></h2>
+        <br><br><br><br><br>
         <div class="container justify-content-center">
           <h2 class="col-12 border-bottom border-secondary">Lo mas vendido</h2>
-          <div class="row col-12  justify-content-between text-center" >
+          <div class="row col-12  justify-content-sm-center justify-content-lg-between text-center" >
 
-            <?php require("imprimirProds.php") ?>
+            <?php
+            $_GET["categoria"] = "oferta";
+            require("imprimirProds.php") ?>
+
+
           </div>
           <br><br><br>
+            <h2 class="col-12 border-bottom border-secondary">Segun tu ultima visita</h2>
+            <div class="row col-12 justify-content-sm-center justify-content-lg-between text-center" >
+            <?php
+            $_GET["categoria"] = "oferta";
+            require("imprimirProds.php") ?>
+          </div>
+          <br><br><br><br><br><br><br><br><br>
           <!-- CATEGORIAS MAS BUSCADAS -->
-          <div class="">
-            <h2 class="text-center">CATEGORIAS MAS BUSCADAS</h2>
+          <div class="row">
+            <h2 class="text-center col-12">CATEGORIAS MAS BUSCADAS</h2>
             <br><br>
-          <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center  p-sm-5 p-lg-0 ">
-            <a href="categorias.php?categoria=computadoras" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2  pl-sm-5 m-sm-2  bg-dark"><ion-icon name="laptop"></ion-icon></a>
-            <a href="categorias.php?categoria=celulares" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="phone-portrait"></ion-icon></a>
-            <a href="#" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="home"></ion-icon></a>
-            <a href="categorias.php?categoria=televisor" class="col-lg-2 col-md-5 sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="desktop"></ion-icon></a>
-          </div>
-          <div class="back-black">
-            <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-center p-sm-5 p-lg-0">
-              <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="bed"></ion-icon></a>
-              <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="bicycle"></ion-icon></a>
-              <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="car"></ion-icon></a>
-              <a href="#" class="col-lg-2 col-md-5  sizezing aling-item-center justify-content-center text-white backg-categorias rounded pr-lg-5 pl-lg-2 pl-sm-5 m-sm-2  bg-dark"><ion-icon name="construct"></ion-icon></a>
+
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/Laptop.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Computadoras</p>
+              </div>
             </div>
-          </div>
+            <div class="card p-5 col-lg-3 col-sm-6" >
+              <img  src="img/index/categorias/Phone.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Celulares</p>
+              </div>
+            </div>
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/Juegos.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Videojuegos</p>
+              </div>
+            </div>
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/Tools.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Herramientas</p>
+              </div>
+            </div>
+
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/House.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Hogar</p>
+              </div>
+            </div>
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/Car.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Autos</p>
+              </div>
+            </div>
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/Bed.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Colchones y Sommiers</p>
+              </div>
+            </div>
+            <div class="card p-5 col-lg-3 col-sm-6">
+              <img  src="img/index/categorias/TV.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center">Televisores</p>
+              </div>
+            </div>
 
         </div>
 
@@ -86,11 +133,7 @@
         <br>
         <br>
         <!-- Productos en ofertas -->
-        <div class="container text-center p-2 justify-content-between">
-          <img src="img/index/oferta1.jpeg" alt="Producto oferta 1" class="col-lg-4 col-md-4 col-12  rounded-circle"  height="200" width="200">
-          <img src="img/index/oferta2.jpeg" alt="Producto oferta 2" class="col-lg-4 col-md-4 col-12 rounded-circle"  height="200" width="200">
-          <img src="img/index/oferta3.jpeg" alt="Producto oferta 3" class="col-lg-4 col-md-4 col-12 rounded-circle"  height="200" width="200">
-        </div>
+
         <!-- Bannert mas productos -->
         <br>
         <br>
