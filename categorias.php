@@ -13,20 +13,23 @@
     <?php require("header.php"); ?>
 
 
-    <div class="container-fluid row m-3">
-      <div class="col-2 border mt-4">
-        <h5 class="text-center">Categorias <br>en construccion...</h2>
-      </div>
-      <div class="container row justify-content-center col-9">
-        <?php require("imprimirProds.php"); ?>
-      </div>
+    <div class="container-fluid">
+      <div class="container row">
+        <div class="col-lg-2 col-3  border mt-4">
+          <h5 class="text-center">Categorias <br>en construccion...</h2>
+        </div>
+        <div class="row justify-content-lg-between justify-content-center col-lg-10 col-8">
+          <?php require("imprimirProds.php"); ?>
+
+        </div>
     </div>
+  </div>
 
 
 
 
 
-
+    <br><br><br><br><br><br><br><br><br><br><br>
     <?php require("footer.php"); ?>
 
 

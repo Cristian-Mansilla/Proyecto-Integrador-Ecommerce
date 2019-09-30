@@ -13,8 +13,8 @@ if(isset($_GET["categoria"])){
     $precio = $producto["precio"];
     foreach ($categorias as $categoria) {
       if($_GET["categoria"] == $categoria){
-          echo "<div class='col-lg-3 col-sm-6 m-1 p-3' style='height:300px;'>
-                  <a href='#top' class='text-decoration-none'><div class='card' style='width: 18rem;'>
+          echo "<div class='col-lg-3 col-sm-6 m-1 mt-2 mb-5 p-3' style='height:300px;'>
+                  <a href='#top' class='text-decoration-none'><div class='card p-5' style='width: 19rem; height:300px;'>
                     <img src='$ruta' class='card-img-top' height='150' alt='...'>
                     <div class='card-body'>
                       <h5 class='card-title'>$titulo</h5>
@@ -22,7 +22,8 @@ if(isset($_GET["categoria"])){
                       </div>
                     </div>
                   </a>
-                </div>";
+                </div>
+              ";
       }
     }
   }
