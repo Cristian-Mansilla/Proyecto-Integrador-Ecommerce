@@ -7,8 +7,8 @@
   <div class="container">
     <div class="row d-flex justify-content-between p-2 col-md-12 col-lg-12">
       <a href="index.php" class="col-md-2 col-lg-2"><img src="img/index/logo-medio.png" class="rounded-circle w-md-10 h-md-10 w-lg-25 h-lg-100" alt="LOGO"></a>
-      <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6" action ="mostrarProd.php" method="post">
-       <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" name="q" aria-label="Search">
+      <form class="form-inline row my-2 my-lg-0 col-md-6 col-lg-6" action ="categorias.php" method="get">
+       <input class="form-control mr-sm-2 col-md-8 col-lg-9" type="search" placeholder="Search" name="categoria" aria-label="Search">
        <button class="btn btn-outline-success my-2 my-sm-0 col-md-3 col-lg-2 text-white text-decoration-none borde-blanco" type="submit" >Search</button>
      </form>
 

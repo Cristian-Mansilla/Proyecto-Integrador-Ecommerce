@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,20 +10,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
+  <body style="background-color: rgb(224, 235, 235);">
     <?php require("header.php"); ?>
 
 
     <div class="container-fluid">
-      <div class="container row">
-        <div class="col-lg-2 col-3  border mt-4">
-          <h5 class="text-center">Categorias <br>en construccion...</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-2  border p-2 mt-4">
+          <h5 class="text-center">Categoria 1</h3>
+          <ul class="text-decoration-none">
+            <li>subcategoria1</li>
+            <li>subcategoria2</li>
+            <li>subcategoria3</li>
+          </ul>
+          <h5 class="text-center">Categoria 2</h3>
+          <ul class="text-decoration-none">
+            <li>subcategoria1</li>
+            <li>subcategoria2</li>
+            <li>subcategoria3</li>
+          </ul>
         </div>
-        <div class="row justify-content-lg-between justify-content-center col-lg-10 col-8">
+        <div class="row justify-content-lg-center justify-content-between col-lg-9 col-9">
           <?php require("imprimirProds.php"); ?>
 
         </div>
-    </div>
+
   </div>
 
 

@@ -5,12 +5,12 @@ $datos = file_get_contents("productos.json");
 $productos = json_decode($datos, true);
 
 $precios = "$" . rand(100,200);
-$categorias = ["tecnologia", "computadoras"];
-$i2 = 22;
-for ($i=0; $i < 10; $i++) {
+$categorias = ["computacion", "componentesPC"];
+$i2 = 0;
+for ($i=0; $i < 5; $i++) {
   $i2++;
   $productos[] = [
-    "ruta" => "imgProd/computadora" . $i . ".jpeg",
+    "ruta" => "imgProd/componentesPC/componente " . $i . ".jpeg",
     "titulo" => "producto" . $i2,
     "precio" => $precios,
     "categorias" => $categorias

@@ -3,8 +3,7 @@
               "ruta" => "electronicaAudioYVideo",
               "nombre" => "Electrónica, Audio y Video ",
               "subCategorias" => [
-                "TV" => ["nombre" => "TV", "ruta" => "televisores"],
-                "ComponentesElectronicos" => ["nombre" => "Componentes Electronicos", "ruta" => "componentesElectronicos"],
+                "TV" => ["nombre" => "TV", "ruta" => "televisor"],
                 "Audio" => ["nombre" => "Audio", "ruta" => "audio"],
                 "Cables" =>["nombre" => "Cables", "ruta" => "cables"]]
                             ],
@@ -14,16 +13,15 @@
               "subCategorias" => [
                 "AccesoriosCelulares" => ["nombre" => "Accesorios Para Celulares", "ruta" => "acceCelulares"],
                 "Celulares" => ["nombre" => "Celulares", "ruta" => "celulares"],
-                "Otros" => ["nombre" => "Otros", "ruta" => "otros"]]
+                ]
                         ],
 "3" => [
               "ruta" => "computacion",
               "nombre" => "Computacíon",
               "subCategorias" => [
                 "Alamacenamiento" => ["nombre" => "Almacenamiento", "ruta" => "almacenamiento"],
-                "USB" => ["nombre" => "USB", "ruta" => "usb"],
                 "ComponentesDePC" => ["nombre" => "Componentes De PC", "ruta" => "componentesPC"],
-                "Laptops" => ["nombre" => "Notebooks", "ruta" => "notebooks"],
+                "Laptops" => ["nombre" => "Notebooks", "ruta" => "computadoras"],
                 "Monitores" => ["nombre" => "Monitores", "ruta" => "monitores"],
                 "Mouses" => ["nombre" => "Mouses", "ruta" => "mouses"]]
                  ],
