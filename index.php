@@ -72,50 +72,50 @@
             <h2 class="text-center col-12">CATEGORIAS MAS BUSCADAS</h2>
             <br><br>
 
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/Laptop.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Computadoras</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6" >
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias" >
               <img  src="img/index/categorias/Phone.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Celulares</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/Juegos.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Videojuegos</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/Tools.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Herramientas</p>
               </div>
             </div>
 
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/House.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Hogar</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/Car.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Autos</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/Bed.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Colchones y Sommiers</p>
               </div>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6">
+            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
               <img  src="img/index/categorias/TV.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Televisores</p>
