@@ -1,70 +1,4 @@
-<?php session_start();
-?>
-<?php
-  function menuCategorias(){
-          $cates = [
-          "electronicaAudioYVideo" => [
-                        "ruta" => "electronicaAudioYVideo",
-                        "nombre" => "Electrónica, Audio y Video ",
-                        "subCategorias" => ["TV", "ComponentesElectronicos", "Audio", "Cables"]
-                                      ],
-          "celularesTelefonos" => [
-                        "ruta" => "celularesTelefonos",
-                        "nombre" => "Celulares y Teléfonos",
-                        "subCategorias" => ["AccesoriosCelulares", "Celulares", "Otros"]
-                                  ],
-          "computacion" => [
-                        "ruta" => "computacion",
-                        "nombre" => "Computacíon",
-                        "subCategorias" => ["Alamacenamiento", "USB", "ComponentesDePC", "Laptops", "Monitores", "Mouses"]
-                           ],
-          "hogar" => [
-                        "ruta" => "hogar",
-                        "nombre" => "Hogar",
-                        "subCategorias" => ["AdornosYDecoracion", "BazarYCocina", "ColchonesYSommiers", "IluminacionParaHogar"]
-                     ],
-          "consolasYJuegos" => [
-                        "ruta" => "consolasYJuegos",
-                        "nombre"=> "Consolas y Juegos",
-                        "subCategorias" => ["Consolas", "Videojuegos"]
-                               ],
-          "deporteYFitness" => [
-                        "ruta" => "deporteYFitness",
-                        "nombre" => "Deporte y Fitness",
-                        "subCategorias" => ["Boxeo", "Basquet", "Futbol", "Golf", "Tennis"]
-                               ],
-          "herramientasYConstruccion" => [
-                        "ruta" => "herramientasYConstruccion",
-                        "nombre" => "Herramientas y Construcción",
-                        "subCategorias" => ["Aberturas", "Electricidad", "Herramientas", "Pintureria"]
-                                         ]
-                        ];
-          // echo "<pre>";
-          // print_r($cates);
-          // echo "</pre>";
-          // foreach ($cates as $cate) {
-
-          //   echo "<li><a href='categorias.php?categoria=$ruta2'>$nombre</a></li> ";
-          // }
-          foreach ($cates as $cate) {
-            $nombre = $cate["nombre"];
-            $ruta2 = $cate["ruta"];
-            $subcates = $cate["subCategorias"];
-              echo "<li><div class='dropdown'>
-                      <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>$nombre</button>
-                      <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>";
-                      foreach ($subcates as $subcate) {
-                        echo "<a class='dropdown-item' href='categorias.php?categoria=$subcate'>$subcate</a>";
-                      };
-            echo "    </div>
-                  </div></li>";
-
-            }
-
-}
-
-
-?>
+<?php session_start(); ?>
 <!-- HEADER ESCRITORIO -->
 
 
@@ -104,30 +38,8 @@
 
     </div>
       <!-- Header 2  -->
-      <div class="row  justify-content-between p-2 col-12 d-lg-block d-xs-none d-sm-none d-md-none">
-        <div class="dropdown col-10 d-flex justify-content-between">
-          <button class="btn btn-secondary dropdown-toggle col-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Categorias
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <div class="row">
-              <ul style="list-style:none;">
-                <?php menuCategorias(); ?>
-              </ul>
+      <?php require("barraNav.php"); ?>
 
-            </div>
-          </div>
-          <div class="col-8 row justify-content-between">
-            <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Canjear cupon</a>
-            <a href="categorias.php?categoria=oferta" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">Ofertas</a>
-            <a href="#top" class="text-center text-white pt-2 bg-dark col-3 rounded p-1">¿Quienes somos?</a>
-            <a href="#top" class="text-center text-white pt-2 bg-dark col-2 rounded p-1">Ayuda</a>
-          </div>
-          <div class="col-2 row">
-            <a href="#top" class="col-4 p-1 m-1 bg-dark text-center text-white rounded"><ion-icon name="notifications"></ion-icon></a>
-            <a href="#top" class="col-4 p-1 m-1 bg-dark text-center text-white rounded"><ion-icon name="cart"></ion-icon></a>
-          </div>
-        </div>
 
 
       </div>
