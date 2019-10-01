@@ -25,20 +25,29 @@
 
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-lg-2 col-2  border p-2 mt-4">
-          <h5 class="text-center">Categoria 1</h3>
-          <ul class="text-decoration-none">
-            <li>subcategoria1</li>
-            <li>subcategoria2</li>
-            <li>subcategoria3</li>
-          </ul>
-          <h5 class="text-center">Categoria 2</h3>
-          <ul class="text-decoration-none">
-            <li>subcategoria1</li>
-            <li>subcategoria2</li>
-            <li>subcategoria3</li>
-          </ul>
-        </div>
+        <div class="col-3 ml-2 mt-4 ">
+                    <ul class="">
+                      <?php
+                      foreach ($cates as $cate) {
+                        $nombrecat = $cate["nombre"];
+                        $rutacat = $cate["ruta"];
+                        echo "<li class=' ''><a href='categorias.php?categoria=$rutacat'>$nombrecat</a>
+                            <ul class=''>";
+                        $subcats = $cate["subCategorias"];
+
+                        foreach ($subcats as $subcat) {
+                          $rutasubcat = $subcat["ruta"];
+                          $nombresubcat = $subcat["nombre"];
+                          echo "<li class=''><a href='categorias.php?categoria=$rutasubcat'>$nombresubcat</a></li>";
+                        }
+                        echo "</ul>
+                    </li>";
+                      }
+                       ?>
+                      </ul>
+
+                    <br style="clear: both;">
+                </div>
         <div class="row justify-content-lg-between  justify-content-between col-lg-9 col-9">
           <?php require("imprimirProds.php");
           imprimirPorCategorias($productos, $catexiste, $cate);?>
