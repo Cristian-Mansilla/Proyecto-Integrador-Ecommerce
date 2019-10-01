@@ -1,7 +1,4 @@
 <?php
-
-  require_once("./perfil.component/datosUsuarioLogeado.php");
-
   $compras = [
     ["name" => "Favoritos", "id" => "favoritos-tab", "href" => "#favoritos", "aria-control" => "favoritos"],
     ["name" => "Compras", "id" => "compras-tab", "href" => "#compras", "aria-control" => "compras"],
