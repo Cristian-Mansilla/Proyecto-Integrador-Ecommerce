@@ -1,4 +1,7 @@
 <?php
+
+  require_once("./perfil.component/datosUsuarioLogeado.php");
+
   $compras = [
     ["name" => "Favoritos", "id" => "favoritos-tab", "href" => "#favoritos", "aria-control" => "favoritos"],
     ["name" => "Compras", "id" => "compras-tab", "href" => "#compras", "aria-control" => "compras"],
@@ -44,7 +47,7 @@
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
               <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>
             </button>
-            <span>¡Hola Usuario!</span>
+            <span>¡Hola <?=$username?>!</span>
             <div class="collapse show" id="navbarNavDropdown">
               <ul class="nav navbar-nav" role="tablist">
                 <li class="nav-item">
