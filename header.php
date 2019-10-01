@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start();?>
 <!-- HEADER ESCRITORIO -->
 
 
@@ -18,7 +18,6 @@
           if(isset($_SESSION["usuarioLogueado"])){
 
               if($_SESSION["usuarioLogueado"] == true){
-                  $username = $_SESSION["nombre"];
                   $rutaindex = $_SESSION["imgPerfil"];
                   echo  "<a href='perfil.php' class='rounded col-7 m-1 p-2 text-center text-white text-decoration-none'><img style='height:50px; width:50px'  src='$rutaindex' alt='imgPerfil'></a>";
                   echo "<a href='desloguear.php' class='borde-blanco border-none pt-1 p-2 bg-white rounded col-4 m-1 text-center text-decoration-none color-lightBlue'>Desloguear</a>";

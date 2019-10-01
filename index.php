@@ -63,8 +63,8 @@
             <h2 class="col-12 border-bottom border-secondary">Segun tu ultima visita</h2>
             <div class="row col-12 justify-content-sm-center justify-content-lg-between text-center" >
             <?php
-            $_GET["categoria"] = "oferta";
-            require("imprimirProds.php") ?>
+            $cate = $_COOKIE["ultimaVisita"];
+            imprimirPorCantidad($cate, 3, $productos)?>
           </div>
           <br><br><br><br><br><br><br><br><br>
           <!-- CATEGORIAS MAS BUSCADAS -->
@@ -73,53 +73,53 @@
             <br><br>
 
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/Laptop.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=computadoras"><img  src="img/index/categorias/Laptop.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Computadoras</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias" >
-              <img  src="img/index/categorias/Phone.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=celulares"><img  src="img/index/categorias/Phone.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Celulares</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/Juegos.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=videojuegos"><img  src="img/index/categorias/Juegos.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Videojuegos</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/Tools.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=herramientas"><img  src="img/index/categorias/Tools.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Herramientas</p>
-              </div>
+              </div></a>
             </div>
 
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/House.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=hogar"><img  src="img/index/categorias/House.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Hogar</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/Car.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=autos"><img  src="img/index/categorias/Car.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Autos</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/Bed.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=colchonesSommiers"><img  src="img/index/categorias/Bed.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Colchones y Sommiers</p>
-              </div>
+              </div></a>
             </div>
             <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
-              <img  src="img/index/categorias/TV.png" class="card-img-top" alt="...">
+              <a class="text-decoration-none text-dark" href="categorias.php?categoria=televisor"><img  src="img/index/categorias/TV.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Televisores</p>
-              </div>
+              </div></a>
             </div>
 
         </div>

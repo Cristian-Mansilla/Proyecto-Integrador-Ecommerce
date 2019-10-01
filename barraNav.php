@@ -29,8 +29,7 @@
               "ruta" => "hogar",
               "nombre" => "Hogar",
               "subCategorias" => [
-                "AdornosYDecoracion" => ["nombre" => "Adornos y Decoracion", "ruta" => "adornosDeco"],
-                "BazarYCocina" => ["nombre" => "Bazar y Cocina", "ruta" => "bazarCocina"],
+                "BazarYCocina" => ["nombre" => "Bazar y Cocina", "ruta" => "BazarYCocina"],
                 "ColchonesYSommiers" => ["nombre" => "Colchones y Sommiers", "ruta" => "colchonesSommiers"],
                 "IluminacionParaHogar" => ["nombre" => "Iluminacion para el hogar", "ruta" => "iluminacionHogar"]]
            ],
@@ -104,7 +103,8 @@ li a{text-decoration: none;}
               <?php
               foreach ($cates as $cate) {
                 $nombrecat = $cate["nombre"];
-                echo "<li class='subs hassubs''><a href='#'>$nombrecat</a>
+                $rutacat = $cate["ruta"];
+                echo "<li class='subs hassubs''><a href='categorias.php?categoria=$rutacat'>$nombrecat</a>
                     <ul class='dDown'>";
                 $subcats = $cate["subCategorias"];
 

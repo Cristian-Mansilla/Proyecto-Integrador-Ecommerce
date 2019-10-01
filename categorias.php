@@ -1,3 +1,12 @@
+<?php if(isset($_COOKIE["ultimaVisita"])){
+  setcookie("ultimaVisita", "", time () -1);
+  setcookie("ultimaVisita", $_GET["categoria"], time() + (86400 * 30));
+
+}else{
+  setcookie("ultimaVisita", $_GET["categoria"], time() + (86400 * 30));
+} ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -30,8 +39,9 @@
             <li>subcategoria3</li>
           </ul>
         </div>
-        <div class="row justify-content-lg-center justify-content-between col-lg-9 col-9">
-          <?php require("imprimirProds.php"); ?>
+        <div class="row justify-content-lg-between  justify-content-between col-lg-9 col-9">
+          <?php require("imprimirProds.php");
+          imprimirPorCategorias($productos, $catexiste, $cate);?>
 
         </div>
 
