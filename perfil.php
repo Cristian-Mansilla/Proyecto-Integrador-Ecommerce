@@ -44,7 +44,7 @@
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
               <a class="navbar-brand" href="#"><i class="fa fa-bars"></i>Mi cuenta</a>
             </button>
-            <span>¡Hola <?=$username?>!</span>
+            <span>¡Hola <?=(isset($username)?$username:"usuario")?>!</span>
             <div class="collapse show" id="navbarNavDropdown">
               <ul class="nav navbar-nav" role="tablist">
                 <li class="nav-item">
