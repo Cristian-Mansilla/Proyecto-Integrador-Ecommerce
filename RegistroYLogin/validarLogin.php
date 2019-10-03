@@ -52,6 +52,7 @@ if ($_POST) {
         $_SESSION["usuarioLogueado"] = true;
         $_SESSION["usuario"] = $usuario;
         $_SESSION["nombre"] = $info["nombre"];
+        $_SESSION["apellido"] = $info["apellido"];
         $_SESSION["email"] = $info["email"];
         $_SESSION["imgPerfil"] = $info["imgPerfil"];
         echo "<script>

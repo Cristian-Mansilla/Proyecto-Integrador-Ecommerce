@@ -1,9 +1,8 @@
 <?php
-  session_start();
 
-  //var_dump($_SESSION);
-
-  $username = $_SESSION["usuario"];
-  $imgPerfil = $_SESSION["imgPerfil"];
+  $nombreUsuario = $_SESSION["usuario"];
+  $nombrePropio = $_SESSION["nombre"];
+  $apellido = $_SESSION["apellido"];
+  $correo = $_SESSION["email"];
 
 ?>
