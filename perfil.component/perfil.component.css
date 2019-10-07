@@ -20,14 +20,14 @@
 }
 
 .color2 {
-  background: #cc0000;
+  background: #4d4d4d;
   color: #fff;
 }
 .color2:hover {
-  background: #990000;
+  background: #333333;
 }
 .color2:active {
-  background: #990000;
+  background: #333333;
 }
 
 .color3 {
