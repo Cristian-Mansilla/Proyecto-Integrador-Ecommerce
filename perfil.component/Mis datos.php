@@ -53,5 +53,6 @@
       </div>
     </div>
     <button class="pulsador color1" type="reset">Resetear</button>
+    <button class="pulsador color3" type="submit" name="guardar">Guardar</button>
   </form>
 </div>

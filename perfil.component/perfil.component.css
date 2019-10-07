@@ -29,10 +29,22 @@
 .color2:active {
   background: #990000;
 }
+
+.color3 {
+  background: #009933;
+  color: #fff;
+}
+.color3:hover {
+  background: #006622;
+}
+.color3:active {
+  background: #006622;
+}
 /* Fin colores para botones */
 
 /* Efecto pulsador para botones */
 .pulsador {
+  display: inline-block;
   padding: 5px 10px;
   cursor: pointer;
   outline: none !important;
