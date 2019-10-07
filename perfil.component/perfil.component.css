@@ -1,8 +1,5 @@
-.border-br {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 1px solid gray !important;
-  border-bottom: 1px solid gray !important;
+.titulo {
+  font-size: 34px;
 }
 
 .inflate:hover {
