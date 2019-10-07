@@ -7,28 +7,45 @@
   padding: 5px 10px;
 }
 
-/* Efecto para boton cambiar contraseña */
+/* Diferentes colores para botones */
+.color1 {
+  background: #3399ff;
+  color: #fff;
+}
+.color1:hover {
+  background-color: #0080ff;
+}
+.color1:active {
+  background: #0080ff;
+}
+
+.color2 {
+  background: #cc0000;
+  color: #fff;
+}
+.color2:hover {
+  background: #990000;
+}
+.color2:active {
+  background: #990000;
+}
+/* Fin colores para botones */
+
+/* Efecto pulsador para botones */
 .pulsador {
-  padding: 5px;
+  padding: 5px 10px;
   cursor: pointer;
   outline: none !important;
-  background: #6699ff;
-  color: #fff;
   border: none;
   border-radius: 10px;
   box-shadow: 0 8px #999;
 }
 
-.pulsador:hover {
-  background-color: #3377ff;
-}
-
 .pulsador:active {
-  background: #3377ff;
   box-shadow: 0 4px #666;
   transform: translateY(4px);
 }
-/* Fin efecto boton cambiar contraseña */
+/* Fin efecto pulsador para botones */
 
 /* Animacion para label's */
 .animatedLabel span {
