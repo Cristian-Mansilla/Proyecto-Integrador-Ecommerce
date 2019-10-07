@@ -10,7 +10,9 @@
     <h2>Datos de cuenta</h2>
     <div class="form-group row border-bottom mb-2">
       <div class="col-12 col-md-2">
-        <label for="username">Usuario:</label>
+        <label class="animatedLabel" for="username">
+          <span>Usuario</span>
+        </label>
       </div>
       <div class="col-12 col-md-10">
         <input class="form-control border-0 bg-transparent" id="username" type="text" name="username" value="<?=(isset($nombreUsuario)?$nombreUsuario:"")?>" placeholder="Usuario">
@@ -22,7 +24,9 @@
     <h2>Datos personales</h2>
     <div class="form-group row border-bottom mb-2">
       <div class="col-12 col-md-2">
-        <label for="name">Nombre:</label>
+        <label class="animatedLabel" for="name">
+          <span>Nombre</span>
+        </label>
       </div>
       <div class="col-12 col-md-10">
         <input class="form-control border-0 bg-transparent" id="name" type="text" name="name" value="<?=(isset($nombrePropio)?$nombrePropio:"")?>" placeholder="Nombre">
@@ -30,7 +34,9 @@
     </div>
     <div class="form-group row border-bottom mb-2">
       <div class="col-12 col-md-2">
-        <label for="lastname">Apellido:</label>
+        <label class="animatedLabel" for="lastname">
+          <span>Apellido</span>
+        </label>
       </div>
       <div class="col-12 col-md-10">
         <input class="form-control border-0 bg-transparent" id="lastname" type="text" name="lastname" value="<?=(isset($apellido)?$apellido:"")?>" placeholder="Apellido">
@@ -38,7 +44,9 @@
     </div>
     <div class="form-group row border-bottom mb-2">
       <div class="col-12 col-md-2">
-        <label for="email">Email:</label>
+        <label class="animatedLabel" for="email">
+          <span>Email</span>
+        </label>
       </div>
       <div class="col-12 col-md-10">
         <input class="form-control border-0 bg-transparent" id="email" type="email" name="email" value="<?=(isset($correo)?$correo:"")?>" placeholder="E-mail">
