@@ -7,6 +7,30 @@
   padding: 5px 10px;
 }
 
+/* Efecto para boton cambiar contraseña */
+.pulsador {
+  padding: 5px;
+  cursor: pointer;
+  outline: none !important;
+  background: #6699ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px #999;
+}
+
+.pulsador:hover {
+  background-color: #3377ff;
+}
+
+.pulsador:active {
+  background: #3377ff;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+/* Fin efecto boton cambiar contraseña */
+
+/* Animacion para label's */
 .animatedLabel span {
   cursor: pointer;
   display: inline-block;
@@ -33,3 +57,4 @@
   opacity: 1;
   right: 0;
 }
+/* Fin animacion label's */
