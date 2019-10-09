@@ -7,6 +7,7 @@
   $email = " ";
   $contrasena = " ";
 
+//persistencia
   if($_POST){
     $usuario = $_POST["username"];
     $nombre = $_POST["name"];
