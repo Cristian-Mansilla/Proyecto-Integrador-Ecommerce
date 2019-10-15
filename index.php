@@ -14,11 +14,12 @@
 }
 
 .zoom {
-  z-index: 999;
-  transition: transform .3s;
+
+  transition: transform .4s;
 }
 
 .zoom:hover {
+  z-index: 999;
   transform: scale(1.1);
 }
 </style>
@@ -86,50 +87,50 @@
             <h2 class="text-center col-12">CATEGORIAS MAS BUSCADAS</h2>
             <br><br>
 
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=computadoras"><img  src="img/index/categorias/Laptop.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Computadoras</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias" >
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias" >
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=celulares"><img  src="img/index/categorias/Phone.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Celulares</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=videojuegos"><img  src="img/index/categorias/Juegos.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Videojuegos</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=herramientas"><img  src="img/index/categorias/Tools.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Herramientas</p>
               </div></a>
             </div>
 
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=hogar"><img  src="img/index/categorias/House.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Hogar</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=autos"><img  src="img/index/categorias/Car.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Autos</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=colchonesSommiers"><img  src="img/index/categorias/Bed.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Colchones y Sommiers</p>
               </div></a>
             </div>
-            <div class="card p-5 col-lg-3 col-sm-6 backg-categorias">
+            <div class="zoom card p-5 col-lg-3 col-sm-6 backg-categorias">
               <a class="text-decoration-none text-dark" href="categorias.php?categoria=televisor"><img  src="img/index/categorias/TV.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text text-center">Televisores</p>
