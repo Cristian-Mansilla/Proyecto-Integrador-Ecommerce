@@ -1,11 +1,11 @@
 <?php
   require_once ("validarRegistro.php");
 
-  $usuario = " ";
-  $nombre = " ";
-  $apellido = " ";
-  $email = " ";
-  $contrasena = " ";
+  $usuario = "";
+  $nombre = "";
+  $apellido = "";
+  $email = "";
+  $contrasena = "";
 
 //persistencia
   if($_POST){
@@ -20,7 +20,7 @@
 
     $errores = validarRegistro();
 
-    var_dump($errores);
+      
 
     if (empty($errores)) {
       // llamo al archivo json usuarios
@@ -59,7 +59,7 @@
     <title>Ecommerce | Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="../css/master.css">
   </head>
   <body class="body-register">
     <div class="container">
