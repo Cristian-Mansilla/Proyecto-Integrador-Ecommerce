@@ -18,13 +18,27 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  transition: transform .3s;
+}
+
+.zoom:hover {
+  z-index: 999;
+  transform: scale(1.1);
+}
+</style>
   </head>
   <body style="background-color: rgb(224, 235, 235);">
     <?php require("header.php"); ?>
 
 
     <div class="container-fluid">
-      <div class="row justify-content-center">
+      <div class="container row justify-content-center">
         <div class="col-3 ml-2 mt-4 ">
                     <ul class="">
                       <?php
@@ -48,7 +62,7 @@
 
                     <br style="clear: both;">
                 </div>
-        <div class="row justify-content-lg-between  justify-content-between col-lg-9 col-9">
+        <div class="row justify-content-between col-lg-9 col-9">
           <?php require("imprimirProds.php");
           imprimirPorCategorias($productos, $catexiste, $cate);?>
 

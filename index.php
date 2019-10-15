@@ -8,6 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  z-index: 999;
+  transition: transform .3s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+</style>
 
   </head>
   <body id="index">

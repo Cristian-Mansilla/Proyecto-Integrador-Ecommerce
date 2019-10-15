@@ -76,7 +76,6 @@
 
 /* index */
 
-}
 
 
 .margen{
@@ -175,6 +174,9 @@
   left: 1000px;
   bottom: 30px;
 }
+
+
+
 @media (max-width: 570px){
   .boton-prod {
     position: absolute;

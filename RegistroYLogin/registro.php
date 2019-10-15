@@ -46,7 +46,7 @@
       $jsonFinal = json_encode($usuarios);
       file_put_contents("usuarios.json", $jsonFinal);
       // Envio al index si el registro esta completado
-      header("location:index.php");
+      header("location:../index.php");
     }
   }
 
