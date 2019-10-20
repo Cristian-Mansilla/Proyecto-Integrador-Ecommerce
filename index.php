@@ -66,7 +66,7 @@
         <br><br><br><br><br>
         <div class="container justify-content-center">
           <h2 class="col-12 border-bottom border-secondary">Lo mas vendido</h2>
-          <div class="row col-12  justify-content-sm-center justify-content-lg-between text-center" >
+          <div class="row col-12  justify-content-center justify-content-lg-between text-center" >
 
             <?php
             $_GET["categoria"] = "oferta";

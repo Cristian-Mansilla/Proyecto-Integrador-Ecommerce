@@ -119,13 +119,13 @@ li a{text-decoration: none;}
                ?>
               </ul>
                 </li>
-                <li><a href="#">Canjear cupon</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">¿Quienes somos?</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="canjearCupon.php">Canjear cupon</a></li>
+                <li><a href="categorias.php?categoria=oferta">Ofertas</a></li>
+                <li><a href="qSomos.php">¿Quienes somos?</a></li>
+                <li><a href="ayuda.php">Ayuda</a></li>
 
                 <li><a href="#top"><ion-icon name="notifications"></ion-icon></a></li>
-                <li><a href="#top"><ion-icon name="cart"></ion-icon></a></li>
+                <li><a href="carrito.php"><ion-icon name="cart"></ion-icon></a></li>
             </ul>
             <br style="clear: both;">
         </div>

@@ -31,6 +31,14 @@
   z-index: 999;
   transform: scale(1.1);
 }
+li a{
+  color:grey;
+  text-decoration:none;
+  }
+li a:hover{
+  color:black;
+  text-decoration:none;
+}
 </style>
   </head>
   <body style="background-color: rgb(224, 235, 235);">
@@ -38,14 +46,14 @@
 
 
     <div class="container-fluid">
-      <div class="container row justify-content-center">
-        <div class="col-3 ml-2 mt-4 ">
-                    <ul class="">
+      <div class="row justify-content-lg-center justify-content-between">
+        <div class="col-2 bg-white mt-4 ">
+                    <ul class="" >
                       <?php
                       foreach ($cates as $cate) {
                         $nombrecat = $cate["nombre"];
                         $rutacat = $cate["ruta"];
-                        echo "<li class=' ''><a href='categorias.php?categoria=$rutacat'>$nombrecat</a>
+                        echo "<li><a href='categorias.php?categoria=$rutacat'>$nombrecat</a>
                             <ul class=''>";
                         $subcats = $cate["subCategorias"];
 
@@ -62,7 +70,7 @@
 
                     <br style="clear: both;">
                 </div>
-        <div class="row justify-content-between col-lg-9 col-9">
+        <div class="row justify-content-between mr-5 col-lg-8 col-8">
           <?php require("imprimirProds.php");
           imprimirPorCategorias($productos, $catexiste, $cate);?>
 

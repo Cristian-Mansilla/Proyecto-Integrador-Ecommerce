@@ -20,7 +20,7 @@
 
     $errores = validarRegistro();
 
-      
+
 
     if (empty($errores)) {
       // llamo al archivo json usuarios
@@ -34,7 +34,7 @@
       $email = $_POST["email"];
       $imgPerfil = "imgPerfiles/" . $_POST["email"] . "/perfil." . $path;
       $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
-      $usuarios[] = [
+      $usuarioa[] = [
         "usuario" => $usuario,
         "apellido" => $apellido,
         "nombre" => $nombre,
