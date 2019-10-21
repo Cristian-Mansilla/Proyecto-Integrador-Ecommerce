@@ -125,7 +125,7 @@ li a{text-decoration: none;}
                 <li><a href="ayuda.php">Ayuda</a></li>
 
                 <li><a href="#top"><ion-icon name="notifications"></ion-icon></a></li>
-                <li><a href="carrito.php"><ion-icon name="cart"></ion-icon></a></li>
+                <li><a href="carritoCompras.php"><ion-icon name="cart"></ion-icon></a></li>
             </ul>
             <br style="clear: both;">
         </div>

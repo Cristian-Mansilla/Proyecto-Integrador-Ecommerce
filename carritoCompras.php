@@ -1,35 +1,23 @@
 <?php
-
-  if(isset($_SESSION["arrayCarrito"])){
-    if(isset($_GET["img"]) && isset($_GET["titulo"]) && isset($_GET["precio"])){
-     $arrayCompras = $_SESSION["arrayCarrito"];
-     $arrayCompras[] = [
-       "ruta" => $_GET['img'],
-       "titulo" => $_GET['titulo'],
-       "precio" => $_GET['precio']
-     ];
-   }
-  }else{
-    $_SESSION["arrayCarrito"] = [
-    0 => ["ruta" => "hola2", "titulo" => "Prueba", "precio" => "200"]
-    ];
-    $arrayCompras = $_SESSION["arrayCarrito"];
-    $arrayCompras[] = [
-      "ruta" => $_GET['img'],
-      "titulo" => $_GET['titulo'],
-      "precio" => $_GET['precio']
-    ];
+if(!isset($_SESSION)){
+  session_start();
+  if(!isset($_SESSION["Carrito"])){
+    $_SESSION["Carrito"] = array();
   }
+}
+if(isset($_GET["titulo"])){
+  $arrayCarrito = [
+    "titulo" => $_GET["titulo"],
+    "precio" => $_GET["precio"],
+    "ruta" => $_GET["img"]
+  ];
+  array_push($_SESSION["Carrito"], $arrayCarrito);
+}
 
-
-
- var_dump($arrayCompras);
-
-
-
-
-
-
+// echo "<pre>";
+// print_r($_SESSION["Carrito"]);
+// echo "</pre>";
+$arrayCompras = $_SESSION["Carrito"];
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -53,30 +41,38 @@
           $ruta = $carrito['ruta'];
           $titulo = $carrito['titulo'];
           $precio = $carrito['precio'];
-          echo "<br><br><br>
+          echo "<br>
           <div class='container'>
             <div class=' row justify-content-around bg-white p-2'>
               <div class='col-3'>
-                <img src='$ruta' alt='Imagen Producto'>
+                <img src='$ruta' alt='Imagen Producto' height='100'>
               </div>
-              <div class='col-6 row justify-content-between'>
-                <div class='col-12 p-2'>
+              <div class='col-8 row justify-content-between'>
+                <div class='col-8 p-4'>
                   <h2>Titulo del $titulo</h2>
                 </div>
-                <div class='col-12'>
-                  <h2>$precio</h2>
+                <div class='col-3 row'>
+                  <div class='col-12 '>
+                    <h4>$precio</h4>
+                  </div>
+
+                    <div class='col-12'>
+                      <a class='bg-primary text-white rounded p-2' href='eliminarCarrito.php?titulo=$titulo'>Eliminar</a>
+                    </div>
+                  </div>
                 </div>
             </div>
+
           </div>
         </div>";
       }
       }else{
-        echo "No tiene productos en su carrito";
+        echo "<h2 class='text-center'>No tiene productos en su carrito</h2>";
       }
 
 
     }else{
-      echo "No tiene productos en su carrito";
+      echo "<h2 class='text-center'>No tiene productos en su carrito</h2>";
     }
 
     ?>

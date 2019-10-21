@@ -1,4 +1,7 @@
-<?php session_start();?>
+<?php
+if(!isset($_SESSION)){
+  session_start();
+}?>
 <!-- HEADER ESCRITORIO -->
 
 
@@ -38,6 +41,7 @@
         </div>
 
     </div>
+    
       <!-- Header 2  -->
       <?php require("barraNav.php"); ?>
 
@@ -91,7 +95,7 @@
     </div>
     <div class="row col-5 justify-content-between py-2 text-center">
       <a href="#top" class="col-4 bg-dark p-2  text-white rounded"><ion-icon name="notifications"></ion-icon></a>
-      <a href="#top" class="col-4  bg-dark p-2 text-white rounded"><ion-icon name="cart"></ion-icon></a>
+      <a href="carritoCompras.php" class="col-4  bg-dark p-2 text-white rounded"><ion-icon name="cart"></ion-icon></a>
     </div>
   </div>
   <div class="container">
