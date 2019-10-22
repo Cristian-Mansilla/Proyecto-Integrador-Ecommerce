@@ -1,4 +1,4 @@
-<footer class="container-fluid justify-content-between row backg-footer">
+<footer class="container-fluid justify-content-between row backg-footer m-0">
   <div class="col-lg-3 col-md-5">
     <h3 class="col-12 text-white">Comprar y vender</h3>
     <ul class="list-unstyled">

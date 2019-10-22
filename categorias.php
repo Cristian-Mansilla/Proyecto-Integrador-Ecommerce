@@ -5,6 +5,69 @@
 }else{
   setcookie("ultimaVisita", $_GET["categoria"], time() + (86400 * 30));
 } ?>
+<?php $cates = [
+"0" => [
+              "ruta" => "electronicaAudioYVideo",
+              "nombre" => "Electrónica, Audio y Video ",
+              "subCategorias" => [
+                "TV" => ["nombre" => "TV", "ruta" => "televisor"],
+                "Audio" => ["nombre" => "Audio", "ruta" => "audio"],
+                "Cables" =>["nombre" => "Cables", "ruta" => "cables"]]
+                            ],
+"1" => [
+              "ruta" => "celularesTelefonos",
+              "nombre" => "Celulares y Teléfonos",
+              "subCategorias" => [
+                "AccesoriosCelulares" => ["nombre" => "Accesorios Para Celulares", "ruta" => "acceCelulares"],
+                "Celulares" => ["nombre" => "Celulares", "ruta" => "celulares"],
+                ]
+                        ],
+"3" => [
+              "ruta" => "computacion",
+              "nombre" => "Computacíon",
+              "subCategorias" => [
+                "Alamacenamiento" => ["nombre" => "Almacenamiento", "ruta" => "almacenamiento"],
+                "ComponentesDePC" => ["nombre" => "Componentes De PC", "ruta" => "componentesPC"],
+                "Laptops" => ["nombre" => "Notebooks", "ruta" => "computadoras"],
+                "Monitores" => ["nombre" => "Monitores", "ruta" => "monitores"],
+                "Mouses" => ["nombre" => "Mouses", "ruta" => "mouses"]]
+                 ],
+"4" => [
+              "ruta" => "hogar",
+              "nombre" => "Hogar",
+              "subCategorias" => [
+                "BazarYCocina" => ["nombre" => "Bazar y Cocina", "ruta" => "BazarYCocina"],
+                "ColchonesYSommiers" => ["nombre" => "Colchones y Sommiers", "ruta" => "colchonesSommiers"],
+                "IluminacionParaHogar" => ["nombre" => "Iluminacion para el hogar", "ruta" => "iluminacionHogar"]]
+           ],
+"5" => [
+              "ruta" => "consolasYJuegos",
+              "nombre"=> "Consolas y Juegos",
+              "subCategorias" => [
+                "Consolas" => ["nombre" => "Consolas", "ruta" => "consolas"],
+                "Videojuegos" => ["nombre" => "Videojuegos", "ruta" => "videojuegos"]]
+                     ],
+"6" => [
+              "ruta" => "deporteYFitness",
+              "nombre" => "Deporte y Fitness",
+              "subCategorias" => [
+                "Boxeo" => ["nombre" => "Boxeo", "ruta" => "boxeo"],
+                "Basquet" => ["nombre" => "Basquet", "ruta" => "basquet"],
+                "Futbol" => ["nombre" => "Futbol", "ruta" => "futbol"],
+                "Golf" => ["nombre" => "Golf", "ruta" => "golf"],
+                "Tennis" => ["nombre" => "Tennis", "ruta" => "tennis"]]
+                     ],
+"7" => [
+              "ruta" => "herramientasYConstruccion",
+              "nombre" => "Herramientas y Construcción",
+              "subCategorias" => [
+                "Aberturas" => ["nombre" => "Aberturas", "ruta" => "aberturas"],
+                "Electricidad" => ["nombre" => "Electricidad", "ruta" => "electricidad"],
+                "Herramientas" => ["nombre" => "Herramientas", "ruta" => "herramientas"],
+                "Pintureria" => ["nombre" => "Pintureria", "ruta" => "pintureria"]]
+                               ]
+              ]; ?>
+
 
 
 
@@ -45,9 +108,15 @@ li a:hover{
     <?php require("header.php"); ?>
 
 
+
+
+
+
+
+
     <div class="container-fluid">
-      <div class="row justify-content-lg-center justify-content-between">
-        <div class="col-2 bg-white mt-4 ">
+      <div class="row justify-content-lg-center">
+        <div class="col-3 col-lg-2 bg-white mt-4 d-lg-block d-none">
                     <ul class="" >
                       <?php
                       foreach ($cates as $cate) {
@@ -70,7 +139,7 @@ li a:hover{
 
                     <br style="clear: both;">
                 </div>
-        <div class="row justify-content-between mr-5 col-lg-8 col-8">
+        <div class="row justify-content-lg-between justify-content-sm-around justify-content-center text-center mr-lg-5 col-lg-8 col-12">
           <?php require("imprimirProds.php");
           imprimirPorCategorias($productos, $catexiste, $cate);?>
 

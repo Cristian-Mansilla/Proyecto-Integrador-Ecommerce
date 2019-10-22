@@ -41,7 +41,7 @@ if(!isset($_SESSION)){
         </div>
 
     </div>
-    
+
       <!-- Header 2  -->
       <?php require("barraNav.php"); ?>
 
@@ -82,10 +82,11 @@ if(!isset($_SESSION)){
 
 
            ?>
-          <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
+          <button class="dropdown-item" type="button"><a href="canjearCupon.php" class="text-center pt-2 col-12 rounded p-1">Canjear cupon</a></button>
           <button class="dropdown-item" type="button"><a href="categorias.php?categoria=oferta" class="text-center pt-2 col-12 rounded p-1">Ofertas</a></button>
-          <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
-          <button class="dropdown-item" type="button"><a href="#top" class="text-center pt-2 col-12 rounded p-1">Ayuda</a></button>
+          <button class="dropdown-item" type="button"><a href="qSomos.php" class="text-center pt-2 col-12 rounded p-1">¿Quienes somos?</a></button>
+          <button class="dropdown-item" type="button"><a href="ayuda.php" class="text-center pt-2 col-12 rounded p-1">Ayuda</a></button>
+          <button class="dropdown-item" type="button"><a href="categorias.php?categoria=oferta" class="text-center pt-2 col-12 rounded p-1">Categorias</a></button>
 
         </div>
 
@@ -97,12 +98,19 @@ if(!isset($_SESSION)){
       <a href="#top" class="col-4 bg-dark p-2  text-white rounded"><ion-icon name="notifications"></ion-icon></a>
       <a href="carritoCompras.php" class="col-4  bg-dark p-2 text-white rounded"><ion-icon name="cart"></ion-icon></a>
     </div>
+
   </div>
   <div class="container">
     <form class="form-inline row my-2 col-12 ml-1">
      <input class="form-control col-10 col-md-11" type="search" placeholder="Search" aria-label="Search">
      <button class="btn btn-outline-success col-2 col-md-1 text-center text-white borde-blanco" type="submit"><ion-icon name="search"></ion-icon></button>
    </form>
+
+
   </div>
+  <br>
+
+
+
 
 </header>
