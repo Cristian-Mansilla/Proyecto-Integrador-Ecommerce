@@ -14,9 +14,7 @@
     $apellido = $_POST["lastname"];
     $email = $_POST["email"];
 
-  }
 
-  if($_POST) {
 
     $errores = validarRegistro();
 
@@ -28,13 +26,9 @@
       $datos = file_get_contents("usuarios.json");
       $usuarios = json_decode($datos, true);
       // determino los valores de los post del formulario
-      $usuario = $_POST["username"];
-      $nombre = $_POST["name"];
-      $apellido = $_POST["lastname"];
-      $email = $_POST["email"];
       $imgPerfil = "imgPerfiles/" . $_POST["email"] . "/perfil." . $path;
       $contrasena = password_hash($_POST["password"], PASSWORD_DEFAULT);
-      $usuarioa[] = [
+      $usuarios[] = [
         "usuario" => $usuario,
         "apellido" => $apellido,
         "nombre" => $nombre,
