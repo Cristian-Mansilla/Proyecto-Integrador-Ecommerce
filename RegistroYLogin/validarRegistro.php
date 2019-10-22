@@ -51,7 +51,7 @@
       $errores[] = "La imagen debe estar en formato jpg, jpeg o png";
     }
   }
-  $datos = file_get_contents("../usuarios.json");
+  $datos = file_get_contents("usuarios.json");
   $usuarios = json_decode($datos, true);
   foreach ($usuarios as $usuario) {
     if ($usuario["usuario"] === $usuario){
