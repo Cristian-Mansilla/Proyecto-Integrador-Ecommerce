@@ -141,7 +141,7 @@ li a:hover{
                 </div>
         <div class="row justify-content-lg-between justify-content-sm-around justify-content-center text-center mr-lg-5 col-lg-8 col-12">
           <?php require("imprimirProds.php");
-          imprimirPorCategorias($productos, $catexiste, $cate);?>
+          imprimirPorCategorias($productos, $cate);?>
 
         </div>
 

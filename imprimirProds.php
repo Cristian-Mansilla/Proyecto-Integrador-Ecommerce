@@ -6,10 +6,13 @@
 $datos = file_get_contents("productos.json");
 $productos = json_decode($datos, true);
 
-$catexiste = false;
-$cate = $_GET["categoria"];
 
-function imprimirPorCategorias($productos, $catexiste, $cate){
+if($_GET){
+  $cate = $_GET["categoria"];
+}
+
+function imprimirPorCategorias($productos, $cate){
+    $catexiste = false;
     foreach ($productos as $producto) {
       $categorias = $producto["categorias"];
       $ruta = $producto["ruta"];
@@ -17,7 +20,7 @@ function imprimirPorCategorias($productos, $catexiste, $cate){
       $precio = $producto["precio"];
       foreach ($categorias as $categoria) {
         if($cate == $categoria){
-          echo "<div class='zoom col-lg-3 m-lg-1 col-md-4 col-sm-6 col-xs-7 mt-2 mb-5 p-3' style='height:300px;'>
+          echo "<div class='zoom col-lg-3 m-lg-1 col-md-4 col-sm-6 col-7 mt-2 mb-5 p-3' style='height:300px;'>
                   <a href='vistaProducto.php?img=$ruta&precio=$precio&titulo=$titulo'zoom class='text-decoration-none'><div class='card p-5' style='width: 19rem; height:300px;'>
                     <img src='$ruta' class='card-img-top' height='150' alt='...'>
                     <div class='card-body'>
@@ -37,10 +40,8 @@ function imprimirPorCategorias($productos, $catexiste, $cate){
     return $catexiste;
   }
 
-$cat = $_GET["categoria"];
-if(imprimirPorCategorias($productos, $catexiste, $cate) == false){
-  echo "<h1>No se encontraron productos con el nombre $cat</h1>";
-}
+
+
 
 
 
