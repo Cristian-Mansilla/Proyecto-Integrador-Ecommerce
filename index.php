@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
@@ -22,6 +26,9 @@
   z-index: 999;
   transform: scale(1.1);
 }
+.sombra:hover{
+  box-shadow: 2px 2px 10px #666;
+}
 </style>
 
   </head>
@@ -30,7 +37,7 @@
     <!-- Contenido Principal -->
     <div class="container-fluid p-0  h-50 backg-grey">
       <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide col-12 p-0" data-ride="carousel" data-delay="none">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide col-12 p-0" data-ride="carousel" data-delay="none">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -55,7 +62,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
       <div class="container-fluid">
         <!-- Bannerts Tarjetas -->
         <div class="container justify-content-between d-flex p-2">
@@ -66,14 +73,14 @@
         <br><br><br><br><br>
         <div class="container justify-content-center">
           <h2 class="col-12 border-bottom border-secondary">Lo mas vendido</h2>
-          <div class="row col-12  justify-content-center justify-content-lg-between text-center" >
+          <!-- <div class="row col-12  justify-content-center justify-content-lg-between text-center" > -->
 
             <?php
-          
+            require_once("./caroussel.php");
             require("imprimirProds.php");
-            imprimirPorCantidad("oferta", 3, $productos)?>
+            // imprimirPorCantidad("oferta", 3, $productos)?>
 
-          </div>
+          <!-- </div> -->
           <br><br><br>
             <h2 class="col-12 border-bottom border-secondary">Segun tu ultima visita</h2>
             <div class="row col-12 justify-content-sm-center justify-content-lg-between text-center" >

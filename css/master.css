@@ -8,6 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 .bg-blue {
@@ -76,7 +77,13 @@
 
 /* index */
 
+.ampliar{
+  height: 330px;
+}
 
+.ampliar:hover{
+  height: 350px;
+}
 
 .margen{
   margin: 1px;
