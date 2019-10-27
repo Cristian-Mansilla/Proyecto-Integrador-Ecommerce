@@ -25,7 +25,6 @@ try {
 
 
 
-
 $usuarios = traerTodosLosUsuarios($dbh);
 
 // agregarDatosTablaUsuario("jose", "morero", "123456", "josemo", "perfil.jpeg", "jose@gmail.com", 1, $dbh);
