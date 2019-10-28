@@ -75,17 +75,19 @@ function traerProductosPorCategorias($categoria, $dbh){
 
   //RECIBIR DATOS PRODUCTOS
   // FETCH_ASSOC
-  $stmtProductos = $dbh->prepare("SELECT * FROM productos WHERE productos.id_categorias=$categoria ");
+  $stmtProductos = $dbh->prepare("SELECT * FROM productos WHERE productos.id_categorias=$categoria; ");
+
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtProductos->setFetchMode(PDO::FETCH_ASSOC);
   // Ejecutamos
   $stmtProductos->execute();
+
   while ($rowProd = $stmtProductos->fetch()) {
     $array[] = [
       "Titulo" => $rowProd["titulo"],
       "Precio" => $rowProd["precio"],
       "Stock" => $rowProd["stock"],
-      "Img" => $rowProd["imgProducto"]
+      "Img" => "img"
     ];
   }
 

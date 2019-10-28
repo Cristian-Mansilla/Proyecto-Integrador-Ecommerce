@@ -40,3 +40,6 @@ $productos = traerProductosPorCategorias(2, $dbh);
 echo "<pre>";
 print_r($productos);
 echo "</pre>";
+
+?>
+<img src='leer.php?id=2' border='0'>
