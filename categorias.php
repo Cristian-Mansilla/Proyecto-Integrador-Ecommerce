@@ -110,13 +110,13 @@ li a:hover{
 
 
 
-
+<br><br><br>
 
 
 
     <div class="container-fluid">
-      <div class="row justify-content-lg-center">
-        <div class="col-3 col-lg-2 bg-white mt-4 d-lg-block d-none">
+      <div class="container justify-content-between d-flex">
+        <div class="col-3 bg-white">
                     <ul class="" >
                       <?php
                       foreach ($cates as $cate) {
@@ -137,13 +137,17 @@ li a:hover{
                        ?>
                       </ul>
 
-                    <br style="clear: both;">
-                </div>
-        <div class="row justify-content-lg-between justify-content-sm-around justify-content-center text-center mr-lg-5 col-lg-8 col-12">
-          <?php require("imprimirProds.php");
-          imprimirPorCategorias($productos, $cate);?>
 
-        </div>
+          </div>
+
+            <div class='bg-white col-9 row'>
+              <?php
+              require_once("./imprimirProds.php");
+              imprimirPorCategorias($productos, $cate); ?>
+            </div>
+
+
+      </div>
 
   </div>
 

@@ -20,16 +20,22 @@ function imprimirPorCategorias($productos, $cate){
       $precio = $producto["precio"];
       foreach ($categorias as $categoria) {
         if($cate == $categoria){
-          echo "<div class='zoom col-lg-3 m-lg-1 col-md-4 col-sm-6 col-7 mt-2 mb-5 p-3' style='height:300px;'>
-                  <a href='vistaProducto.php?img=$ruta&precio=$precio&titulo=$titulo'zoom class='text-decoration-none'><div class='card p-5' style='width: 19rem; height:300px;'>
-                    <img src='$ruta' class='card-img-top' height='150' alt='...'>
-                    <div class='card-body'>
-                      <h5 class='card-title'>$titulo</h5>
-                      <p class='card-text'>$precio</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+          echo "
+
+            <div class='col-12 row border-bottom m-0' style='height:220px;'>
+              <a href='vistaProducto.php?img=$ruta&titulo=$titulo&precio=$precio' class='col-12 row text-decoration-none text-dark'>
+              <div class='col-4 p-4'>
+                <img src='$ruta' height='160' width='160'>
+              </div>
+              <div class='col-8 p-5 row'>
+                <h4 class='col-12'>$titulo</h4>
+                <h2 class='col-5'>$precio</h2>
+                <h4 class='col-5'>En stock: 3</h4>
+
+              </div>
+              </a>
+            </div>
+
               ";
                 $catexiste=true;
         }

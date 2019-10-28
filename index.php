@@ -24,7 +24,7 @@
 
 .zoom:hover {
   z-index: 999;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .sombra:hover{
   box-shadow: 2px 2px 10px #666;
