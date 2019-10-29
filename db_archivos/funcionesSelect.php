@@ -11,7 +11,9 @@ function traerTodosLosUsuarios2($dbh){
     LEFT JOIN provincias C
     ON B.id_provincia=C.idprovincias
     LEFT JOIN pais D
-    ON C.id_pais=D.idpais;");
+    ON C.id_pais=D.idpais
+    
+    ");
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtUsuario->setFetchMode(PDO::FETCH_ASSOC);
   // Ejecutamos

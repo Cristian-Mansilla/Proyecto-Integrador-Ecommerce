@@ -42,4 +42,4 @@ print_r($productos);
 echo "</pre>";
 
 ?>
-<img src='leer.php?id=2' border='0'>
+<img src='img/leer.php?id=2' border='0'>
