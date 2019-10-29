@@ -1,57 +1,33 @@
 <?php
-function traerTodosLosUsuarios($dbh){
+
+function traerTodosLosUsuarios2($dbh){
   //RECIBIR DATOS USUARIOS
   // FETCH_ASSOC
-  $stmtUsuario = $dbh->prepare("SELECT * FROM usuarios ");
+  $stmtUsuario = $dbh->prepare("
+    SELECT A.nombre,A.apellido,A.contrasena,A.usuario,A.email,A.imgPerfil,B.nombreCiudad,C.nombreProvincia,D.nombrePais
+    FROM usuarios A
+    LEFT JOIN ciudad B
+    ON B.idCiudad=A.id_ciudad
+    LEFT JOIN provincias C
+    ON B.id_provincia=C.idprovincias
+    LEFT JOIN pais D
+    ON C.id_pais=D.idpais;");
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtUsuario->setFetchMode(PDO::FETCH_ASSOC);
   // Ejecutamos
   $stmtUsuario->execute();
 
   while ($rowUsuario = $stmtUsuario->fetch()){
-    // DEFINO LAS VARIABLES CON LA INFO DEL USUARIO
     $nom = $rowUsuario["nombre"];
     $ape = $rowUsuario["apellido"];
     $pass = $rowUsuario["contrasena"];
     $user = $rowUsuario["usuario"];
     $photo = $rowUsuario["imgPerfil"];
     $email = $rowUsuario["email"];
-
-    // TRAIGO LAS CIUDADES DE LA TABLA CIUDAD QUE SEAN IGUAL A LA FOREIGN KEY "id_Ciudad" DE LA TABLA USUARIOS
-    $ciu = $rowUsuario["id_ciudad"];
-    $stmtCiudad = $dbh->prepare("SELECT * FROM ciudad WHERE idCiudad LIKE $ciu ");
-    // Especificamos el fetch mode antes de llamar a fetch()
-    $stmtCiudad->setFetchMode(PDO::FETCH_ASSOC);
-    // Ejecutamos
-    $stmtCiudad->execute();
-
-    $rowCiudad = $stmtCiudad->fetch();
-
-  // TRAIGO LAS PROVINCIAS DE LA TABLA PROVINCIAS QUE SEAN IGUAL A LA FOREIGN KEY "id_Provincia" DE LA TABLA CIUDAD
-    $prov = $rowCiudad['id_provincia'];
-    $stmtProvincia = $dbh->prepare("SELECT * FROM provincias WHERE idprovincias LIKE $prov ");
-    // Especificamos el fetch mode antes de llamar a fetch()
-    $stmtProvincia->setFetchMode(PDO::FETCH_ASSOC);
-    // Ejecutamos
-    $stmtProvincia->execute();
-
-    $rowPorvincia = $stmtProvincia->fetch();
-
-    // TRAIGO EL PAIS DE LA TABLA PAIS QUE SEAN IGUAL A LA FOREIGN KEY "id_pais" DE LA TABLA PROVINCIA
-    $pais = $rowPorvincia["id_pais"];
-    $stmtPais = $dbh->prepare("SELECT * FROM pais WHERE idpais LIKE $pais ");
-    // Especificamos el fetch mode antes de llamar a fetch()
-    $stmtPais->setFetchMode(PDO::FETCH_ASSOC);
-
-    $stmtPais->execute();
-
-    $rowPais = $stmtPais->fetch();
-
-  // SE CREA EL ARRAY CON TODA LA INFO DE UBICACION DEL USUARIO
     $ubicacion=[
-      "ciudad" => $rowCiudad["nombreCiudad"],
-      "provincia" => $rowPorvincia["nombreProvincia"],
-      "pais" => $rowPais["nombrePais"]
+      "ciudad" => $rowUsuario["nombreCiudad"],
+      "provincia" => $rowUsuario["nombreProvincia"],
+      "pais" => $rowUsuario["nombrePais"]
     ];
 
   // SE CREA EL ARRAY CON TODA LA INFO DEL USUARIO
@@ -70,12 +46,26 @@ function traerTodosLosUsuarios($dbh){
 }
 
 
+
+
+
+// SELECT PARA productos
+
+
 function traerProductosPorCategorias($categoria, $dbh){
 
 
   //RECIBIR DATOS PRODUCTOS
   // FETCH_ASSOC
-  $stmtProductos = $dbh->prepare("SELECT * FROM productos WHERE productos.id_categorias=$categoria; ");
+  $stmtProductos = $dbh->prepare("
+  SELECT A.titulo,A.precio,A.stock,B.nombreCategoria,C.imagen,D.marca FROM productos A
+  LEFT JOIN categorias B
+  ON A.id_categorias=B.idCategorias
+  LEFT JOIN imagenes C
+  ON C.id=A.imgProducto
+  LEFT JOIN Marcas D
+  ON A.id_marca=D.idMarca
+  WHERE A.id_categorias=$categoria; ");
 
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtProductos->setFetchMode(PDO::FETCH_ASSOC);
@@ -87,7 +77,10 @@ function traerProductosPorCategorias($categoria, $dbh){
       "Titulo" => $rowProd["titulo"],
       "Precio" => $rowProd["precio"],
       "Stock" => $rowProd["stock"],
-      "Img" => "img"
+      "Marca" => $rowProd["marca"],
+      "Img" => $rowProd["imagen"],
+      "Categoria" => $rowProd["nombreCategoria"],
+
     ];
   }
 
