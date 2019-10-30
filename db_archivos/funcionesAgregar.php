@@ -48,14 +48,31 @@ function agregarDatosTablaCiudad($nombreCiudad, $idProvincia ,$dbh){
 }
 
 // AGREGAR PRODUCTO
-function agregarDatosTablaProducto($titulo, $precio, $stock, $imgProducto, $id_marca, $id_categorias, $dbh){
+
+function agregarImagenProducto($dbh){
+  $datos = base64_encode(file_get_contents($_FILES['imagen']['tmp_name']));
+
+  $stmt = $dbh->prepare("INSERT INTO `imagenes` (`id`, `imagen`) VALUES (NULL, :imagen);");
+  // Bind
+  $stmt->bindParam(':imagen', $datos);
+  // Excecute
+
+  $stmt->execute();
+  $lastInsertId = $dbh->lastInsertId();
+    return  $lastInsertId;
+
+}
+
+
+
+function agregarDatosTablaProducto($titulo, $precio, $stock, $id_marca, $id_categorias,$id_imagen, $dbh){
   // Prepare
   $stmt = $dbh->prepare("INSERT INTO `productos` (`idProductos`, `titulo`, `precio`, `stock`, `imgProducto`, `id_marca`, `id_categorias`) VALUES (NULL, :titulo, :precio, :stock, :imgProducto, :id_marca, :id_categorias);");
   // Bind
   $stmt->bindParam(':titulo', $titulo);
   $stmt->bindParam(':precio', $precio);
   $stmt->bindParam(':stock', $stock);
-  $stmt->bindParam(':imgProducto', $imgProducto);
+  $stmt->bindParam(':imgProducto', $id_imagen);
   $stmt->bindParam(':id_marca', $id_marca);
   $stmt->bindParam(':id_categorias', $id_categorias);
   // Excecute

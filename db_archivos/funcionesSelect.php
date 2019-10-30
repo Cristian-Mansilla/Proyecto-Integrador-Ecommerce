@@ -1,6 +1,6 @@
 <?php
 
-function traerTodosLosUsuarios2($dbh){
+function traerTodosLosUsuarios($dbh){
   //RECIBIR DATOS USUARIOS
   // FETCH_ASSOC
   $stmtUsuario = $dbh->prepare("
@@ -12,7 +12,7 @@ function traerTodosLosUsuarios2($dbh){
     ON B.id_provincia=C.idprovincias
     LEFT JOIN pais D
     ON C.id_pais=D.idpais
-    
+
     ");
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtUsuario->setFetchMode(PDO::FETCH_ASSOC);
@@ -41,7 +41,6 @@ function traerTodosLosUsuarios2($dbh){
       "email" => $email,
       "img perfil" => $photo,
       "ubicacion" => $ubicacion
-
     ];
   }
   return $array;

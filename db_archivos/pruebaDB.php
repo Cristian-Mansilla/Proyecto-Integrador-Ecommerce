@@ -25,9 +25,9 @@ try {
 
 
 
-$usuarios = traerTodosLosUsuarios2($dbh);
+$usuarios = traerTodosLosUsuarios($dbh);
 
-// agregarDatosTablaUsuario("jose", "morero", "123456", "josemo", "perfil.jpeg", "jose@gmail.com", 1, $dbh);
+
 
 // IMPRIMO TODA LA INFO DEL  USUARIO
 echo "IMPRIMIR TODOS LOS USUARIOS";
