@@ -50,7 +50,7 @@ function agregarDatosTablaCiudad($nombreCiudad, $idProvincia ,$dbh){
 // AGREGAR PRODUCTO
 
 function agregarImagenProducto($dbh){
-  $datos = base64_encode(file_get_contents($_FILES['imagen']['tmp_name']));
+  $datos = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
 
   $stmt = $dbh->prepare("INSERT INTO `imagenes` (`id`, `imagen`) VALUES (NULL, :imagen);");
   // Bind

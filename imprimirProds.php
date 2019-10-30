@@ -1,10 +1,18 @@
 <?php
+$user = "root";
+$password = "04232905";
+$dbname = "db_4Buy";
+try {
+$dsn = "mysql:host=localhost;dbname=$dbname";
+$dbh = new PDO($dsn, $user, $password);
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e){
+echo $e->getMessage();
+}
+require_once("./db_archivos/funciones/funcionesSelect.php");
 
 
 
-
-$datos = file_get_contents("productos.json");
-$productos = json_decode($datos, true);
 
 
 if($_GET){
@@ -12,38 +20,35 @@ if($_GET){
 }
 
 function imprimirPorCategorias($productos, $cate){
-    $catexiste = false;
+
     foreach ($productos as $producto) {
-      $categorias = $producto["categorias"];
-      $ruta = $producto["ruta"];
-      $titulo = $producto["titulo"];
-      $precio = $producto["precio"];
-      foreach ($categorias as $categoria) {
-        if($cate == $categoria){
+
+      $ruta = $producto["Img"];
+      $titulo = $producto["Titulo"];
+      $precio = $producto["Precio"];
+      $stock = $producto["Stock"];
+
           echo "
 
             <div class='col-12 row border-bottom m-0' style='height:220px;'>
               <a href='vistaProducto.php?img=$ruta&titulo=$titulo&precio=$precio' class='col-12 row text-decoration-none text-dark'>
               <div class='col-4 p-4'>
-                <img src='$ruta' height='160' width='160'>
+                <img src='db_archivos/funciones/leerImg.php?img=$ruta' height='160' width='160'>
               </div>
               <div class='col-8 p-5 row'>
                 <h4 class='col-12'>$titulo</h4>
                 <h2 class='col-5'>$precio</h2>
-                <h4 class='col-5'>En stock: 3</h4>
+                <h4 class='col-5'>En stock: $stock</h4>
 
               </div>
               </a>
             </div>
 
               ";
-                $catexiste=true;
+
         }
 
-      }
 
-    }
-    return $catexiste;
   }
 
 

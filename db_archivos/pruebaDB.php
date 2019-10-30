@@ -1,7 +1,7 @@
 <?php
 
-require_once("./funcionesAgregar.php");
-require_once("./funcionesSelect.php");
+require_once("./funciones/funcionesSelect.php");
+require_once("./funciones/funcionesSelect.php");
 // CONECTAR A DB
 
     $user = "root";

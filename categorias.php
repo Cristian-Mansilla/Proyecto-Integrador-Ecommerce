@@ -10,7 +10,7 @@
               "ruta" => "electronicaAudioYVideo",
               "nombre" => "Electrónica, Audio y Video ",
               "subCategorias" => [
-                "TV" => ["nombre" => "TV", "ruta" => "televisor"],
+                "TV" => ["nombre" => "TV", "ruta" => "1"],
                 "Audio" => ["nombre" => "Audio", "ruta" => "audio"],
                 "Cables" =>["nombre" => "Cables", "ruta" => "cables"]]
                             ],
@@ -19,7 +19,7 @@
               "nombre" => "Celulares y Teléfonos",
               "subCategorias" => [
                 "AccesoriosCelulares" => ["nombre" => "Accesorios Para Celulares", "ruta" => "acceCelulares"],
-                "Celulares" => ["nombre" => "Celulares", "ruta" => "celulares"],
+                "Celulares" => ["nombre" => "Celulares", "ruta" => "2"],
                 ]
                         ],
 "3" => [
@@ -143,6 +143,7 @@ li a:hover{
             <div class='bg-white col-9 row'>
               <?php
               require_once("./imprimirProds.php");
+              $productos = traerProductosPorCategorias($cate, $dbh);
               imprimirPorCategorias($productos, $cate); ?>
             </div>
 

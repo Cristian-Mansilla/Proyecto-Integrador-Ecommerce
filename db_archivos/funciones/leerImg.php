@@ -10,17 +10,15 @@ try {
 } catch (PDOException $e){
   echo $e->getMessage();
 }
+  $id=$_GET["img"];
 
-  $stmtProductos = $dbh->prepare("SELECT * FROM imagenes; ");
-
-  // Especificamos el fetch mode antes de llamar a fetch()
-  $stmtProductos->setFetchMode(PDO::FETCH_ASSOC);
-  // Ejecutamos
+  $stmtProductos = $dbh->prepare("SELECT imagen FROM imagenes WHERE id=$id");
   $stmtProductos->execute();
+    
 
-  while ($rowProd = $stmtProductos->fetch()) {
+  $rowProd = $stmtProductos->fetch();
 
     $datos = $rowProd["imagen"];
     $datos = base64_decode($datos);
+
     echo $datos;
-  }

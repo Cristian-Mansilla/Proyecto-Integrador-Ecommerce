@@ -59,11 +59,9 @@ function traerProductosPorCategorias($categoria, $dbh){
   //RECIBIR DATOS PRODUCTOS
   // FETCH_ASSOC
   $stmtProductos = $dbh->prepare("
-  SELECT A.titulo,A.precio,A.stock,B.nombreCategoria,C.imagen,D.marca FROM productos A
+  SELECT A.titulo,A.precio,A.stock,B.nombreCategoria,A.imgProducto,D.marca FROM productos A
   LEFT JOIN categorias B
   ON A.id_categorias=B.idCategorias
-  LEFT JOIN imagenes C
-  ON C.id=A.imgProducto
   LEFT JOIN Marcas D
   ON A.id_marca=D.idMarca
   WHERE A.id_categorias=$categoria; ");
@@ -79,7 +77,7 @@ function traerProductosPorCategorias($categoria, $dbh){
       "Precio" => $rowProd["precio"],
       "Stock" => $rowProd["stock"],
       "Marca" => $rowProd["marca"],
-      "Img" => $rowProd["imagen"],
+      "Img" => $rowProd["imgProducto"],
       "Categoria" => $rowProd["nombreCategoria"],
 
     ];
