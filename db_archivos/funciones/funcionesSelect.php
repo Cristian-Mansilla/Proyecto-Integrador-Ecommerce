@@ -64,7 +64,7 @@ function traerProductosPorCategorias($categoria, $dbh){
   ON A.id_categorias=B.idCategorias
   LEFT JOIN Marcas D
   ON A.id_marca=D.idMarca
-  WHERE A.id_categorias=$categoria; ");
+  WHERE A.id_categorias=$categoria OR B.id_subcategorias=$categoria; ");
 
   // Especificamos el fetch mode antes de llamar a fetch()
   $stmtProductos->setFetchMode(PDO::FETCH_ASSOC);
@@ -72,15 +72,17 @@ function traerProductosPorCategorias($categoria, $dbh){
   $stmtProductos->execute();
 
   while ($rowProd = $stmtProductos->fetch()) {
-    $array[] = [
-      "Titulo" => $rowProd["titulo"],
-      "Precio" => $rowProd["precio"],
-      "Stock" => $rowProd["stock"],
-      "Marca" => $rowProd["marca"],
-      "Img" => $rowProd["imgProducto"],
-      "Categoria" => $rowProd["nombreCategoria"],
 
-    ];
+      $array[] = [
+        "Titulo" => $rowProd["titulo"],
+        "Precio" => $rowProd["precio"],
+        "Stock" => $rowProd["stock"],
+        "Marca" => $rowProd["marca"],
+        "Img" => $rowProd["imgProducto"],
+        "Categoria" => $rowProd["nombreCategoria"],
+
+      ];
+    
   }
 
   return $array;

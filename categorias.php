@@ -7,64 +7,64 @@
 } ?>
 <?php $cates = [
 "0" => [
-              "ruta" => "electronicaAudioYVideo",
+              "ruta" => "1",
               "nombre" => "Electrónica, Audio y Video ",
               "subCategorias" => [
-                "TV" => ["nombre" => "TV", "ruta" => "1"],
-                "Audio" => ["nombre" => "Audio", "ruta" => "audio"],
-                "Cables" =>["nombre" => "Cables", "ruta" => "cables"]]
+                "TV" => ["nombre" => "TV", "ruta" => "8"],
+                "Audio" => ["nombre" => "Audio", "ruta" => "9"],
+                "Cables" =>["nombre" => "Cables", "ruta" => "10"]]
                             ],
 "1" => [
-              "ruta" => "celularesTelefonos",
+              "ruta" => "2",
               "nombre" => "Celulares y Teléfonos",
               "subCategorias" => [
-                "AccesoriosCelulares" => ["nombre" => "Accesorios Para Celulares", "ruta" => "acceCelulares"],
-                "Celulares" => ["nombre" => "Celulares", "ruta" => "2"],
+                "AccesoriosCelulares" => ["nombre" => "Accesorios Para Celulares", "ruta" => "11"],
+                "Celulares" => ["nombre" => "Celulares", "ruta" => "12"],
                 ]
                         ],
 "3" => [
-              "ruta" => "computacion",
+              "ruta" => "3",
               "nombre" => "Computacíon",
               "subCategorias" => [
-                "Alamacenamiento" => ["nombre" => "Almacenamiento", "ruta" => "almacenamiento"],
-                "ComponentesDePC" => ["nombre" => "Componentes De PC", "ruta" => "componentesPC"],
-                "Laptops" => ["nombre" => "Notebooks", "ruta" => "computadoras"],
-                "Monitores" => ["nombre" => "Monitores", "ruta" => "monitores"],
-                "Mouses" => ["nombre" => "Mouses", "ruta" => "mouses"]]
+                "Alamacenamiento" => ["nombre" => "Almacenamiento", "ruta" => "13"],
+                "ComponentesDePC" => ["nombre" => "Componentes De PC", "ruta" => "14"],
+                "Laptops" => ["nombre" => "Notebooks", "ruta" => "15"],
+                "Monitores" => ["nombre" => "Monitores", "ruta" => "16"],
+                "Mouses" => ["nombre" => "Mouses", "ruta" => "17"]]
                  ],
 "4" => [
-              "ruta" => "hogar",
+              "ruta" => "4",
               "nombre" => "Hogar",
               "subCategorias" => [
-                "BazarYCocina" => ["nombre" => "Bazar y Cocina", "ruta" => "BazarYCocina"],
-                "ColchonesYSommiers" => ["nombre" => "Colchones y Sommiers", "ruta" => "colchonesSommiers"],
-                "IluminacionParaHogar" => ["nombre" => "Iluminacion para el hogar", "ruta" => "iluminacionHogar"]]
+                "BazarYCocina" => ["nombre" => "Bazar y Cocina", "ruta" => "18"],
+                "ColchonesYSommiers" => ["nombre" => "Colchones y Sommiers", "ruta" => "19"],
+                "IluminacionParaHogar" => ["nombre" => "Iluminacion para el hogar", "ruta" => "20"]]
            ],
 "5" => [
-              "ruta" => "consolasYJuegos",
+              "ruta" => "5",
               "nombre"=> "Consolas y Juegos",
               "subCategorias" => [
-                "Consolas" => ["nombre" => "Consolas", "ruta" => "consolas"],
-                "Videojuegos" => ["nombre" => "Videojuegos", "ruta" => "videojuegos"]]
+                "Consolas" => ["nombre" => "Consolas", "ruta" => "21"],
+                "Videojuegos" => ["nombre" => "Videojuegos", "ruta" => "22"]]
                      ],
 "6" => [
-              "ruta" => "deporteYFitness",
+              "ruta" => "6",
               "nombre" => "Deporte y Fitness",
               "subCategorias" => [
-                "Boxeo" => ["nombre" => "Boxeo", "ruta" => "boxeo"],
-                "Basquet" => ["nombre" => "Basquet", "ruta" => "basquet"],
-                "Futbol" => ["nombre" => "Futbol", "ruta" => "futbol"],
-                "Golf" => ["nombre" => "Golf", "ruta" => "golf"],
-                "Tennis" => ["nombre" => "Tennis", "ruta" => "tennis"]]
+                "Boxeo" => ["nombre" => "Boxeo", "ruta" => "23"],
+                "Basquet" => ["nombre" => "Basquet", "ruta" => "24"],
+                "Futbol" => ["nombre" => "Futbol", "ruta" => "25"],
+                "Golf" => ["nombre" => "Golf", "ruta" => "26"],
+                "Tennis" => ["nombre" => "Tennis", "ruta" => "27"]]
                      ],
 "7" => [
-              "ruta" => "herramientasYConstruccion",
+              "ruta" => "7",
               "nombre" => "Herramientas y Construcción",
               "subCategorias" => [
-                "Aberturas" => ["nombre" => "Aberturas", "ruta" => "aberturas"],
-                "Electricidad" => ["nombre" => "Electricidad", "ruta" => "electricidad"],
-                "Herramientas" => ["nombre" => "Herramientas", "ruta" => "herramientas"],
-                "Pintureria" => ["nombre" => "Pintureria", "ruta" => "pintureria"]]
+                "Aberturas" => ["nombre" => "Aberturas", "ruta" => "28"],
+                "Electricidad" => ["nombre" => "Electricidad", "ruta" => "29"],
+                "Herramientas" => ["nombre" => "Herramientas", "ruta" => "30"],
+                "Pintureria" => ["nombre" => "Pintureria", "ruta" => "31"]]
                                ]
               ]; ?>
 
