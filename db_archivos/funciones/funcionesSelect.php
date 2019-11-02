@@ -82,8 +82,27 @@ function traerProductosPorCategorias($categoria, $dbh){
         "Categoria" => $rowProd["nombreCategoria"],
 
       ];
-    
+
   }
 
+  return $array;
+}
+
+
+
+function traerMarcas($dbh){
+  $stmt = $dbh->prepare("SELECT * from Marcas");
+  $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  // Ejecutamos
+  $stmt->execute();
+
+  while ($row = $stmt->fetch()) {
+    $marca = $row["marca"];
+    $id= $row["id"];
+    $array[]=[
+      "id"=>$id,
+      "marca"=>$marca
+    ];
+  }
   return $array;
 }
