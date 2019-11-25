@@ -66,9 +66,9 @@
       <div class="container-fluid">
         <!-- Bannerts Tarjetas -->
         <div class="container justify-content-between d-flex p-2">
-          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Banert Tarjetas 1" class="col-lg-6 col-md-12">
-          <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Baner Tarjetas 2" class="col-lg-6 d-lg-block d-sm-none d-md-none d-none ">
-        </div>
+            <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Banert Tarjetas 1" class="col-lg-6 col-md-12">
+            <img src="img/index/banner_tarjeta1.png" height="100" width="500" alt="Baner Tarjetas 2" class="col-lg-6 d-lg-block d-sm-none d-md-none d-none ">
+          </div>
         <!-- Mas Vendidos -->
         <br><br><br><br><br>
         <div class="container justify-content-center">
